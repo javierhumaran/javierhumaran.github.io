@@ -11,15 +11,15 @@
         <div class="game" ng-controller="GameController">
             <section id="match-score">
                 <h3 class="team" id="home">HOME</h3>
-                <h3 class="score" id="home-score">0</h3>
+                <h3 class="score" id="home-score">{{ score.homeScore }}</h3>
                 <h3 class="team" id="away">AWAY</h3>
-                <h3 class="score" id="away-score">0</h3>
+                <h3 class="score" id="away-score">{{ score.awayScore }}</h3>
             </section>
             <section id="match-message">
-                <h1>¡Choose your weapon!</h1>
+                <h1>{{ matchMessage.userResult + matchMessage.matchResult + matchMessage.pcResult + '!' }}</h1>
             </section>
             <ul class="weapons">
-                <weapon ng-repeat="weapon in weapons" listing="weapon" class="card" ng-value="{{ listing.weapon_value }}"></weapon>
+                <weapon ng-repeat="weapon in weapons" listing="weapon" class="card" ng-click="userChoice(weapon.weapon_name)"></weapon>
             </ul>
         </div>
         
