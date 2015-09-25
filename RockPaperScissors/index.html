@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="css/normalizer.css">
+        <link rel="stylesheet" href="css/rockPaperScissor.css">
+        <script src="js/rockPaperScissor.js"></script>
+    </head>
+    <body>
+        <div class="game">
+            <section id="match-score">
+                <h3 class="team" id="home">HOME</h3>
+                <h3 class="score" id="home-score">0</h3>
+                <h3 class="team" id="away">AWAY</h3>
+                <h3 class="score" id="away-score">0</h3>
+            </section>
+            <section id="match-message">
+                <h1>¡Choose your weapon!</h1>
+            </section>
+            <ul class="weapons">
+                <li class="card" value="0" onclick="userChoice(this.value)">
+                    <article>
+                        <img src="img/rock.png">
+                        <figcaption>Rock</figcaption>
+                    </article>
+                </li>
+                <li class="card" value="1" onclick="userChoice(this.value)">
+                    <article>
+                        <img src="img/paper.png">
+                        <figcaption>Paper</figcaption>
+                    </article>
+                </li>
+                <li class="card" value="2" onclick="userChoice(this.value)">
+                    <article>
+                        <img src="img/scissors.png">
+                        <figcaption>Scissors</figcaption>
+                    </article>
+                </li>
+                <li class="card" value="3" onclick="userChoice(this.value)">
+                    <article>
+                        <img src="img/lizard.png">
+                        <figcaption>Lizard</figcaption>
+                    </article>
+                </li>
+                <li class="card" value="4" onclick="userChoice(this.value)">
+                    <article>
+                        <img src="img/spock.png">
+                        <figcaption>Spock</figcaption>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
