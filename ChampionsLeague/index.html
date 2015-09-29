@@ -9,7 +9,9 @@
     </head>
     <body ng-app="ChampionsLeague">
         <div id="championsLeague" ng-controller="ChampionsController">
-            <group ng-repeat="group in groups" groups="group" class="group"></group>
+            <ul class="groups">
+                <group ng-repeat="group in groups" groups="group" class="group"></group>
+            </ul>
         </div>
     </body>
     
