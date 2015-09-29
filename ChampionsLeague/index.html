@@ -7,11 +7,20 @@
         <link rel="stylesheet" href="css/champions.css">
         <script src="js/vendor/angular.min.js"></script>
     </head>
-    <body ng-app="ChampionsLeague">
-        <div id="championsLeague" ng-controller="ChampionsController">
-            <ul class="groups">
-                <group ng-repeat="group in groups" groups="group" class="group"></group>
-            </ul>
+    <body ng-app="ChampionsLeague" ng-controller="ChampionsController" id="championsLeague">
+        <header class="appBar">
+            <select class="appBarTitle">
+                <option>Champions League Season 2014 - 2015</option>
+                <option>Champions League Season 2013 - 2014</option>
+                <option>Champions League Season 2012 - 2013</option>
+            </select>
+        </header>
+        <div class="mainContainer">
+            <section>
+                <ul class="groups">
+                    <group ng-repeat="group in groups" groups="group" class="group"></group>
+                </ul>
+            </section>
         </div>
     </body>
     
