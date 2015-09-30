@@ -4,15 +4,17 @@ body {
 }
 #championsLeague {
     color: rgba(0,0,0,0.87);
-    display: table;
     width: 100%;
 }
 /* ++++++++++ App Bar ++++++++++ */
 #championsLeague .appBar {
+    box-shadow: 0 0 15px rgba(0,0,0,.75);
     color: #fff;
     background-color: #303F9F;
     height: 64px;
     padding: 0 16px;
+    position: fixed;
+    width: 100%;
 }
 #championsLeague .appBar .sideBarButton {
     background: url(/ChampionsLeague/img/menu.png) center no-repeat;
@@ -29,7 +31,8 @@ body {
     font-size: 24px;
     font-weight: normal;
     height: 64px;
-    margin-left: 56px;
+    line-height: 64px;
+    margin: 0 0 0 56px;
     outline: none;
     vertical-align: middle;
 }
@@ -46,15 +49,24 @@ body {
     #championsLeague .appBar .appBarTitle {
         font-size: 20px;
         height: 56px;
+        line-height: 56px;
     }
 }
 /* ++++++++++ Content Container ++++++++++ */
 #championsLeague .mainContainer {
     color: rgba(0,0,0,0.87);
     display: table;
+    height: calc(100% - 64px);
+    margin-top: 64px;
     width: 100%;
 }
-#championsLeage .mainContainer section {
+@media (max-width: 600px) {
+    #championsLeague .mainContainer {
+        height: calc(100% - 56px);
+        margin-top: 56px;
+    }
+}
+#championsLeague .mainContainer section {
     display: table-cell;
     vertical-align: middle;
 }
