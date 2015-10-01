@@ -13,7 +13,7 @@ body {
     background-color: #303F9F;
     height: 64px;
     padding: 0 16px;
-    position: fixed;
+    position: absolute;
     width: 100%;
 }
 #championsLeague .appBar .sideBarButton {
@@ -56,14 +56,14 @@ body {
 #championsLeague .mainContainer {
     color: rgba(0,0,0,0.87);
     display: table;
-    height: calc(100% - 64px);
-    margin-top: 64px;
+    height: 100%;
+    padding-top: 64px;
     width: 100%;
 }
 @media (max-width: 600px) {
     #championsLeague .mainContainer {
-        height: calc(100% - 56px);
-        margin-top: 56px;
+        height: 100%;
+        padding-top: 56px;
     }
 }
 #championsLeague .mainContainer section {
