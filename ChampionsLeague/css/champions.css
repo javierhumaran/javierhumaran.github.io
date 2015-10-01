@@ -12,8 +12,10 @@ body {
     color: #fff;
     background-color: #303F9F;
     height: 64px;
+    left: 0;
     padding: 0 16px;
     position: absolute;
+    top: 0;
     width: 100%;
 }
 #championsLeague .appBar .sideBarButton {
