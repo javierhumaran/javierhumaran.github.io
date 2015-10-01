@@ -14,7 +14,7 @@ body {
     height: 64px;
     left: 0;
     padding: 0 16px;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
 }
