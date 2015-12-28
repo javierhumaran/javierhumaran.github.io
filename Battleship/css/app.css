@@ -1,0 +1,27 @@
+body {
+  background-color: #000000;
+  background-image: url("../img/stars.png");
+  background-size: 150px;
+  color: white; }
+
+h1 {
+  color: transparent;
+  font-family: 'Distant Galaxy';
+  font-size: 60px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 32px 0;
+  -webkit-text-stroke: 1px #FFEB3B; }
+
+#game-container {
+  height: 500px;
+  margin: 0 auto; }
+  #game-container canvas {
+    display: inline-block;
+    outline: none; }
+  #game-container #player {
+    margin-bottom: 8px;
+    margin-left: 32px;
+    margin-right: 56px; }
+
+/*# sourceMappingURL=app.css.map */
