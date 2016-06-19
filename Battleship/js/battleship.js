@@ -180,6 +180,15 @@ function clickShoot (e) {
         y           = Math.ceil((e.pageY - elemTop)/50);
     
     shoot(x, y, pc);
+    
+    randomShoot(player);
+}
+
+function randomShoot(target) {
+    var cX  = Math.floor(Math.random() * target.board.length + 1);
+    var cY  = Math.floor(Math.random() * target.board.length + 1);
+    
+    shoot(cX, cY, player);
 }
 
 function addRandomShips(target) {
@@ -204,5 +213,6 @@ function init() {
     
     player.printBoard();
     pc.printBoard();
+    addRandomShips(player);
     addRandomShips(pc);
 }
