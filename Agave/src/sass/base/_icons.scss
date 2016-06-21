@@ -1,0 +1,10 @@
+$icons: facebook, twitter, linkedin, google, tumblr;
+
+@each $icon in $icons {
+  .icon {
+    &-#{$icon}{
+      background: url("../img/#{$icon}.png") no-repeat center;
+      background-size: 48px;
+    }
+  }
+}

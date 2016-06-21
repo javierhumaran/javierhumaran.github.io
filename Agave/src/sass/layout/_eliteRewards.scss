@@ -1,4 +1,41 @@
 #eliteRewards {
+  align-items: center;
   background-color: $gray;
-  height: 700px;
+  display: flex;
+  flex-direction: column;
+  padding: 176px 0 56px;
+  position: relative;
+
+  h1, p, button {
+    color: #fff;
+  }
+
+  .container {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    max-width: 1170px;
+    text-align: right;
+    width: 100%;
+
+    button {
+      background-color: $green;
+      border: none;
+      border-radius: 16px;
+      outline: none;
+      padding: 16px 32px;
+    }
+  }
+
+  &:after {
+    border-color: #fff $gray $gray #fff;
+    border-style: solid;
+    border-width: 0 0 120px 100vw;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+  }
 }

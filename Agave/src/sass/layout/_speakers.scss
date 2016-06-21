@@ -1,0 +1,28 @@
+#speakers {
+  height: 500px;
+  position: relative;
+
+  &:before {
+    border-color: $gray transparent transparent $gray;
+    border-style: solid;
+    border-width: 0 0 120px 100vw;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+  }
+
+  &:after {
+    border-color: transparent $gray $gray transparent;
+    border-style: solid;
+    border-width: 0 0 120px 100vw;
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 0;
+    width: 0;
+  }
+}

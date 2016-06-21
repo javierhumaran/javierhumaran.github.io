@@ -1,0 +1,6 @@
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    padding: 0 15px;
+    width: (100% / 12) * $i;
+  }
+}

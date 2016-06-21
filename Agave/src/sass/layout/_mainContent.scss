@@ -1,3 +1,28 @@
 #mainContent {
-  height: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 1170px;
+    width: 100%;
+
+    .bullets {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin: 72px 0 0;
+      padding: 0;
+
+      li {
+        text-align: center;
+      }
+    }
+  }
 }
