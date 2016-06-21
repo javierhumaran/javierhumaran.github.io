@@ -1,5 +1,51 @@
 #sponsor {
+  align-items: center;
   background-color: $gray;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 0;
   position: relative;
+
+  .container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    max-width: 1170px;
+    text-align: center;
+    width: 100%;
+
+    ul {
+      display: flex;
+      height: 75px;
+      justify-content: space-around;
+      list-style: none;
+      margin: 56px 0;
+      padding: 0;
+      .logo-mountains {
+        background: url("../img/mountains.png") no-repeat center;
+        height: auto;
+        width: 180px;
+      }
+      .logo-weird {
+        background: url("../img/weird.png") no-repeat center;
+        height: auto;
+        width: 180px;
+      }
+    }
+
+    button {
+      background-color: $green;
+      border: none;
+      border-radius: 16px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 22px;
+      margin-bottom: 56px;
+      outline: none;
+      padding: 16px 32px;
+    }
+  }
+
+  h1, p, button {
+    color: #fff;
+  }
 }
