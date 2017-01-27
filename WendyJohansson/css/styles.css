@@ -20,6 +20,19 @@ h1 {
   /*transform: rotate(-90deg);*/
 }
 
+h2 {
+  color: #293036;
+  font-family: 'Lora', serif;
+  font-size: 42px;
+  line-height: 56px;
+}
+
+p {
+  color: #707980;
+  font-size: 18px;
+  font-family: 'Cabin', sans-serif;
+}
+
 header {
   background-image: url('../img/hero.png');
   background-size: cover;
@@ -52,8 +65,11 @@ nav h5 {
   right: 90px;
 }
 
-.container {
+header .container {
   align-items: center;
+}
+
+.container {
   display: flex;
   height: 100%;
   margin: 0 auto;
@@ -66,7 +82,7 @@ nav h5 {
   font-family: 'Cabin', sans-serif;
 }
 
-.info p {
+header .info p {
   font-size: 24px;
   line-height: 32px;
   opacity: 0.6;
@@ -153,4 +169,42 @@ nav h5 {
   position: absolute;
   transform: rotate(-90deg);
   width: 240px;
+}
+
+#bio {
+  height: 542px;
+  margin-top: 90px;
+}
+
+#bio .container {
+  align-items: center;
+  height: auto;
+}
+
+#bio .info {
+  width: 50%;
+}
+
+#bio .info h2,
+#bio .info p {
+  max-width: 448px;
+}
+
+#bio span {
+  color: #707980;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.6;
+}
+
+#bio h3 {
+  color: #da247f;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.video {
+  max-width: 538px;
 }
