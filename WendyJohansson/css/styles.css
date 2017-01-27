@@ -27,6 +27,13 @@ h2 {
   line-height: 56px;
 }
 
+h3 {
+  color: #293036;
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  line-height: 32px;
+}
+
 p {
   color: #707980;
   font-size: 18px;
@@ -171,8 +178,7 @@ header .info p {
   width: 240px;
 }
 
-#bio {
-  height: 542px;
+section {
   margin-top: 90px;
 }
 
@@ -207,4 +213,54 @@ header .info p {
 
 .video {
   max-width: 538px;
+}
+
+#selected-talks {
+  text-align: center;
+}
+
+#selected-talks .container {
+  flex-flow: row wrap;
+}
+
+#selected-talks h2 {
+  flex-basis: 100%;
+  margin-bottom: 48px;
+}
+
+#selected-talks .talk {
+  display: inline-block;
+  padding: 0 12px;
+  text-align: left;
+  width: 33.33%;
+}
+
+.talk img {
+  width: 100%;
+}
+
+.talk .event {
+  color: #707980;
+  display: block;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 24px 0 4px;
+}
+
+.talk h3 {
+  height: 64px;
+  margin-bottom: 8px;
+}
+
+.talk p {
+  height: 96px;
+}
+
+.talk .date {
+  color: #707980;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 8px;
 }
