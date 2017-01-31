@@ -198,6 +198,7 @@ a {
 #selected-talks h2 {
   text-align: center;
   margin-top: 32px;
+  padding: 0 24px;
 }
 
 #selected-talks .talk {
@@ -301,6 +302,7 @@ a {
   list-style: none;
   margin-top: 48px;
   padding: 0;
+  width: 100%;
 }
 
 #experience ul .company {
@@ -322,6 +324,42 @@ a {
   font-size: 18px;
   line-height: 24px;
   margin-top: 16px;
+}
+
+#latest-publications {
+  background-color: #111111;
+  padding-top: 80px;
+}
+
+#latest-publications * {
+  color: #fff;
+}
+
+#latest-publications h2 {
+  text-align: center;
+  padding: 0 24px;
+}
+
+#latest-publications ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#latest-publications .publication {
+  margin-top: 48px;
+}
+
+#latest-publications .publication img {
+  width: 100%;
+}
+
+#latest-publications .publication p {
+  margin-top: 24px;
+  text-align: center;
 }
 
 @media (min-width: 375px) {
@@ -368,6 +406,18 @@ a {
   #experience ul .company {
     margin: 0 16px 32px;
     width: calc(50% - 32px);
+  }
+
+  #latest-publications ul {
+    flex-direction: row;
+  }
+
+  #latest-publications .publication {
+    flex-basis: calc(33.33% - 8px);
+  }
+
+  #latest-publications .publication:nth-child(2) {
+    margin: 48px 16px 0;
   }
 }
 
@@ -487,17 +537,25 @@ a {
     text-align: right;
   }
 
+  #experience {
+    margin-bottom: 80px;
+  }
+
   #experience .container {
     padding: 0 90px;
   }
 
   #experience ul .company {
     margin: 0;
-    width: calc(33.33% - 16px);
+    width: calc(33% - 8px);
   }
 
   #experience ul .company:nth-of-type(2){
     margin: 0 16px;
+  }
+
+  #latest-publications .container {
+    padding: 0 90px;
   }
 }
 
