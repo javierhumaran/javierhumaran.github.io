@@ -29,11 +29,19 @@ h3 {
   line-height: 32px;
 }
 
+h4 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+}
+
 a,
 p {
   color: #707980;
   font-family: 'Cabin', sans-serif;
   margin: 0;
+  opacity: 0.8;
 }
 
 p {
@@ -48,6 +56,9 @@ a {
 
 .container {
   display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 640px;
   padding: 24px;
 }
 
@@ -209,11 +220,71 @@ a {
 }
 
 #selected-talks .talk h3 {
+  height: 64px;
   margin-bottom: 24px;
 }
 
 #selected-talks .talk .date {
   margin-top: 24px;
+}
+
+#talks-list .container {
+  flex-flow: column;
+}
+
+#talks-list h4 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#talks-list ol {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#talks-list ol h3 {
+  color: #DA247F;
+  margin-bottom: 8px;
+}
+
+#talks-list ol ul {
+  border-top: 1px solid #E9EAEA;
+  list-style: none;
+  padding: 24px 0;
+}
+
+#talks-list .talk {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 32px;
+}
+
+#talks-list .talk .event {
+  color: #707980;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#talks-list .talk .title {
+  color: #293036;
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+#talks-list .talk .date {
+  color: #707980;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 12px;
+  opacity: 0.8;
 }
 
 @media (min-width: 375px) {
@@ -235,7 +306,7 @@ a {
   }
 
   #bio .video {
-    min-height: 55vw;
+    min-height: 45vw;
   }
 
   #selected-talks .container {
@@ -254,6 +325,11 @@ a {
 }
 
 @media (min-width: 1024px) {
+
+  .container {
+    max-width: 1100px;
+  }
+
   #hero nav .icon {
     display: none;
   }
@@ -317,6 +393,7 @@ a {
 
   #selected-talks .container {
     flex-wrap: nowrap;
+    padding: 0 90px;
   }
 
   #selected-talks h2 {
@@ -327,10 +404,44 @@ a {
     flex-basis: 33.33%;
     margin: 48px 12px;
   }
+
+  #selected-talks .talk h3 {
+    height: 96px;
+  }
+
+  #selected-talks .talk p {
+    height: 96px;
+  }
+
+  #talks-list .container {
+    padding: 0 90px;
+  }
+
+  #talks-list .talk {
+    flex-direction: row;
+  }
+
+  #talks-list .talk .event,
+  #talks-list .talk .date {
+    flex-basis: 25%;
+  }
+
+  #talks-list .talk .title,
+  #talks-list .talk .date {
+    margin-top: 0;
+  }
+
+  #talks-list .talk .title {
+    flex-basis: 50%;
+  }
+
+  #talks-list .talk .date {
+    text-align: right;
+  }
 }
 
 @media (min-width: 1440px) {
-  #bio .video {
-    min-height: 355px;
+  #selected-talks .talk h3 {
+    height: 64px;
   }
 }
