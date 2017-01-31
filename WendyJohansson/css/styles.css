@@ -331,7 +331,8 @@ a {
   padding-top: 80px;
 }
 
-#latest-publications * {
+#latest-publications *,
+#footer * {
   color: #fff;
 }
 
@@ -360,6 +361,49 @@ a {
 #latest-publications .publication p {
   margin-top: 24px;
   text-align: center;
+}
+
+#footer {
+  background-color: #111111;
+  padding-top: 72px;
+}
+
+#footer .container {
+  flex-direction: column;
+}
+
+#footer h3 {
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 8px;
+}
+
+#footer .left,
+#footer .right {
+  margin-bottom: 24px;
+}
+
+#footer .right p {
+  opacity: 0.6;
+}
+
+#footer .right a {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+#footer .bottom {
+  border-top: 1px solid #404040;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+#footer .bottom span {
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 @media (min-width: 375px) {
@@ -418,6 +462,29 @@ a {
 
   #latest-publications .publication:nth-child(2) {
     margin: 48px 16px 0;
+  }
+
+  #footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #footer .left,
+  #footer .right {
+    flex-basis: 50%;
+  }
+
+  #footer .right {
+    text-align: right;
+  }
+
+  #footer .right p {
+    margin-top: 16px;
+  }
+
+  #footer .bottom {
+    flex-basis: 100%;
   }
 }
 
@@ -557,9 +624,17 @@ a {
   #latest-publications .container {
     padding: 0 90px;
   }
+
+  #footer .container {
+    padding: 0 90px 32px;
+  }
 }
 
 @media (min-width: 1440px) {
+  #hero .container {
+    padding: 0;
+  }
+
   #selected-talks .talk h3 {
     height: 64px;
   }
