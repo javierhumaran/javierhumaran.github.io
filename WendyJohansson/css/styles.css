@@ -175,16 +175,85 @@ a {
 
 #bio .video {
   margin-top: 32px;
-  max-width: 560px;
+  /*max-width: 560px;*/
   width: 100%;
 }
 
-@media (min-width: 1100px) {
+#selected-talks .container {
+  flex-direction: column;
+  padding-top: 0;
+}
+
+#selected-talks h2 {
+  text-align: center;
+  margin-top: 32px;
+}
+
+#selected-talks .talk {
+  margin-top: 48px;
+  max-width: 460px;
+}
+
+#selected-talks .talk img {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+#selected-talks .talk span {
+  color: #707980;
+  display: block;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.6;
+}
+
+#selected-talks .talk h3 {
+  margin-bottom: 24px;
+}
+
+#selected-talks .talk .date {
+  margin-top: 24px;
+}
+
+@media (min-width: 375px) {
+
+  #bio .video {
+    min-height: 50vw;
+  }
+}
+
+@media (min-width: 768px) {
   #hero {
     background-image: url('../img/hero.png');
+    background-position: center;
     background-size: cover;
   }
 
+  #hero .info {
+    flex-basis: 40%;
+  }
+
+  #bio .video {
+    min-height: 55vw;
+  }
+
+  #selected-talks .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #selected-talks h2 {
+    margin-bottom: 24px;
+  }
+
+  #selected-talks .talk {
+    flex-basis: calc(50% - 24px);
+    margin: 24px 12px;
+  }
+}
+
+@media (min-width: 1024px) {
   #hero nav .icon {
     display: none;
   }
@@ -242,6 +311,26 @@ a {
   #bio .video {
     flex-basis: 50%;
     margin-top: 88px;
+    max-height: 315px;
+    min-height: 0;
   }
 
+  #selected-talks .container {
+    flex-wrap: nowrap;
+  }
+
+  #selected-talks h2 {
+    margin: 0;
+  }
+
+  #selected-talks .talk {
+    flex-basis: 33.33%;
+    margin: 48px 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #bio .video {
+    min-height: 355px;
+  }
 }
