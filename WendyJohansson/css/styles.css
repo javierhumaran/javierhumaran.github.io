@@ -287,6 +287,43 @@ a {
   opacity: 0.8;
 }
 
+#experience h2 {
+  text-align: center;
+}
+
+#experience .container {
+  padding-top: 0;
+}
+
+#experience ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 48px;
+  padding: 0;
+}
+
+#experience ul .company {
+  margin-bottom: 24px;
+}
+
+#experience .company .role {
+  color: #707980;
+  display: block;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 16px;
+}
+
+#experience .company p {
+  color: #707980;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
 @media (min-width: 375px) {
 
   #bio .video {
@@ -321,6 +358,16 @@ a {
   #selected-talks .talk {
     flex-basis: calc(50% - 24px);
     margin: 24px 12px;
+  }
+
+  #experience ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #experience ul .company {
+    margin: 0 16px 32px;
+    width: calc(50% - 32px);
   }
 }
 
@@ -428,6 +475,7 @@ a {
 
   #talks-list .talk .title,
   #talks-list .talk .date {
+    margin-left: 24px;
     margin-top: 0;
   }
 
@@ -437,6 +485,19 @@ a {
 
   #talks-list .talk .date {
     text-align: right;
+  }
+
+  #experience .container {
+    padding: 0 90px;
+  }
+
+  #experience ul .company {
+    margin: 0;
+    width: calc(33.33% - 16px);
+  }
+
+  #experience ul .company:nth-of-type(2){
+    margin: 0 16px;
   }
 }
 
