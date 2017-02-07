@@ -30,7 +30,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 24px;
@@ -39,7 +39,7 @@ h4 {
 a,
 p {
   color: #707980;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Muli', sans-serif;
   margin: 0;
   opacity: 0.8;
 }
@@ -145,11 +145,14 @@ a {
   width: 24px;
 }
 
-#hero .info a:active {
+#hero .info a:active,
+#hero .info a:hover {
   color: #DA247F;
+  cursor: pointer;
 }
 
-#hero .info a:active::after {
+#hero .info a:active::after,
+#hero .info a:hover::after {
   background-image: url('../img/icon-add-pink.svg');
 }
 
@@ -172,7 +175,7 @@ a {
 #bio .info span {
   color: #707980;
   display: block;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
   line-height: 24px;
   opacity: 0.6;
@@ -214,19 +217,18 @@ a {
 #selected-talks .talk span {
   color: #707980;
   display: block;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
   line-height: 24px;
   opacity: 0.6;
 }
 
 #selected-talks .talk h3 {
-  height: 64px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 #selected-talks .talk .date {
-  margin-top: 24px;
+  margin-top: 16px;
 }
 
 #talks-list .container {
@@ -266,7 +268,7 @@ a {
 
 #talks-list .talk .event {
   color: #707980;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
@@ -320,7 +322,7 @@ a {
 
 #experience .company p {
   color: #707980;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 18px;
   line-height: 24px;
   margin-top: 16px;
@@ -401,7 +403,7 @@ a {
 }
 
 #footer .bottom span {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -421,7 +423,7 @@ a {
   }
 
   #hero .info {
-    flex-basis: 40%;
+    flex-basis: 50%;
   }
 
   #bio .video {
@@ -440,6 +442,15 @@ a {
   #selected-talks .talk {
     flex-basis: calc(50% - 24px);
     margin: 24px 12px;
+  }
+
+  #selected-talks .talk h3 {
+    height: 64px;
+    margin-bottom: 16px;
+  }
+
+  #selected-talks .talk p {
+    height: 120px;
   }
 
   #experience ul {
@@ -491,7 +502,7 @@ a {
 @media (min-width: 1024px) {
 
   .container {
-    max-width: 1100px;
+    max-width: 1280px;
   }
 
   #hero nav .icon {
@@ -555,6 +566,10 @@ a {
     min-height: 0;
   }
 
+  #selected-talks {
+    margin-top: 60px;
+  }
+
   #selected-talks .container {
     flex-wrap: nowrap;
     padding: 0 90px;
@@ -575,6 +590,10 @@ a {
 
   #selected-talks .talk p {
     height: 96px;
+  }
+
+  #talks-list {
+    margin-top: 60px;
   }
 
   #talks-list .container {
@@ -605,6 +624,7 @@ a {
   }
 
   #experience {
+    margin-top: 60px;
     margin-bottom: 80px;
   }
 
@@ -632,7 +652,7 @@ a {
 
 @media (min-width: 1440px) {
   #hero .container {
-    padding: 0;
+    padding: 0 90px;
   }
 
   #selected-talks .talk h3 {
