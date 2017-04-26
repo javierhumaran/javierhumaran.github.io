@@ -80,23 +80,77 @@ h4, h5, p {
   padding: 0 32px;
 }
 
-#hero .container h1, h3 {
+#hero .container h1,
+#hero .container h3 {
   margin-bottom: 16px;
-}
-
-section {
-  padding: 16px 32px 48px;
 }
 
 section h2 {
   border-bottom: 2px solid #b69b87;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto 8px;
+  margin: 0 auto;
   padding-bottom: 8px;
-  width: 75%;
+  width: 60%;
 }
 
 #synopsis {
-  padding: 16px 32px 48px;
+  padding: 16px 0 48px;
+}
+
+#synopsis p {
+  margin-top: 32px;
+  padding: 0 32px;
+}
+
+#cast article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 280px;
+  text-align: center;
+  position: relative;
+}
+
+#cast article:before {
+  background-color: #000;
+  content: "";
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+}
+
+#cast article h3 {
+  margin-bottom: 4px;
+  z-index: 1;
+}
+
+#cast article p {
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+#cast article.carl {
+  background-image: url("../img/carl.png");
+}
+
+#cast article.whip {
+  background-image: url("../img/whip.png");
+}
+
+#cast article.cane {
+  background-image: url("../img/cane.png");
+}
+
+#cast article.panto {
+  background-image: url("../img/panto.png");
+}
+
+#cast article.allyson {
+  background-image: url("../img/allyson.png");
+}
+
+#cast article.boots {
+  background-image: url("../img/boots.png");
 }
