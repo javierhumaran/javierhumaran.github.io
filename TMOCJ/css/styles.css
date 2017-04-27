@@ -193,6 +193,7 @@ section h2 {
 #support .subscribe input {
   background-color: rgba(132, 132, 132, 0.2);
   border: 1px solid #b69b87;
+  border-radius: 0;
   color: #fff;
   flex-basis: 75%;
   font-family: 'Lora', serif;
