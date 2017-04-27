@@ -191,14 +191,21 @@ section h2 {
 }
 
 #support .subscribe input {
-  border: none;
+  background-color: rgba(132, 132, 132, 0.2);
+  border: 1px solid #b69b87;
+  color: #fff;
   flex-basis: 75%;
-  padding: 0;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  outline: none;
+  padding: 0 16px;
 }
 
 #support .subscribe button {
   background-color: #b69b87;
-  border: none;
+  border: 1px solid #b69b87;
   color: #fff;
   flex-basis: 25%;
   font-family: 'Lora', serif;
