@@ -29,8 +29,7 @@ h3 {
 }
 
 h1, h2, h3 {
-  font-family: 'Lora', serif;
-  font-weight: bold;
+  font-family: 'Lora-Bold', serif;
 }
 
 .gold {
@@ -47,10 +46,8 @@ h4, h5, p {
   background-color: transparent;
   border: 1px solid #b69b87;
   color: #fff;
-  font-family: 'Lora', serif;
+  font-family: 'Lora-BoldItalic', serif;
   font-size: 18px;
-  font-style: italic;
-  font-weight: bold;
   letter-spacing: 2.2px;
   line-height: 24px;
   padding: 8px 16px;
@@ -71,8 +68,7 @@ h4, h5, p {
 
 #hero nav p {
   font-size: 12px;
-  font-family: 'Lora', serif;
-  font-weight: bold;
+  font-family: 'Lora-Bold', serif;
   line-height: 16px;
   text-align: center;
 }
@@ -201,8 +197,7 @@ section h2 {
   border: none;
   color: #fff;
   flex-basis: 25%;
-  font-family: 'Lora', serif;
-  font-weight: bold;
+  font-family: 'Lora-Bold', serif;
   font-size: 10px;
   padding: 0;
   width: 72px;
