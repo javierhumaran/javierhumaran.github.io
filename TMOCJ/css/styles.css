@@ -85,6 +85,10 @@ h4, h5, p {
   margin-bottom: 16px;
 }
 
+section {
+  margin-bottom: 16px;
+}
+
 section h2 {
   border-bottom: 2px solid #b69b87;
   text-align: center;
@@ -103,10 +107,6 @@ section h2 {
   padding: 0 32px;
 }
 
-#cast {
-  margin-bottom: 16px;
-}
-
 #cast article {
   background-size: cover;
   display: flex;
@@ -121,8 +121,10 @@ section h2 {
   background-color: #000;
   content: "";
   height: 100%;
+  left: 0;
   opacity: 0.4;
   position: absolute;
+  top: 0;
   width: 100%;
 }
 
@@ -165,4 +167,37 @@ section h2 {
   background-size: cover;
   background-position: -80px 0;
   height: 283px;
+}
+
+#support h1 {
+  margin: 48px;
+  text-align: center;
+}
+
+#support .subscribe {
+  display: flex;
+  height: 32px;
+  margin: 0 48px;
+}
+
+#support .subscribe input,
+#support .subscribe button {
+  height: 100%;
+}
+
+#support .subscribe input {
+  border: none;
+  flex-basis: 75%;
+  padding: 0;
+}
+
+#support .subscribe button {
+  background-color: #b69b87;
+  border: none;
+  color: #fff;
+  flex-basis: 25%;
+  font-family: 'Lora-Bold', serif;
+  font-size: 10px;
+  padding: 0;
+  width: 72px;
 }
