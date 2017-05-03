@@ -77,8 +77,13 @@ h4, h5, p {
 
 #hero nav {
   background-color: rgba(0, 0, 0, 0.28);
+  display: flex;
   height: 56px;
-  padding: 20px;
+  padding: 12px 20px;
+}
+
+#hero nav img {
+  padding: 8px 0;
 }
 
 #hero nav p {
@@ -87,6 +92,8 @@ h4, h5, p {
   font-weight: bold;
   line-height: 16px;
   text-align: center;
+  padding: 8px 0;
+  width: 100%;
 }
 
 #hero .container {
