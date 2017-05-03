@@ -195,8 +195,14 @@ section h2 {
   height: 283px;
 }
 
+#support {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
 #support h1 {
-  margin: 48px;
+  margin: 40px;
   text-align: center;
 }
 
@@ -235,4 +241,16 @@ section h2 {
   font-size: 10px;
   padding: 0;
   width: 72px;
+}
+
+
+#support .btn-donate {
+  background-color: transparent;
+  background-image: url("../img/donate.png");
+  border: none;
+  color: transparent;
+  height: 72px;
+  outline: none;
+  padding: 0;
+  width: 192px;
 }
