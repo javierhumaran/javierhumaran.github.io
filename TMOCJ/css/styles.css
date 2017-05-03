@@ -123,6 +123,8 @@ section h2 {
 }
 
 #synopsis {
+  display: flex;
+  flex-flow: column;
   padding: 16px 0 48px;
 }
 
