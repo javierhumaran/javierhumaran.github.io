@@ -53,7 +53,19 @@ h4, h5, p {
   font-weight: bold;
   letter-spacing: 2.2px;
   line-height: 24px;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 40px;
+  position: relative;
+}
+
+.btn-trailer::before {
+  background-image: url("../img/icon-play.png");
+  background-position: center;
+  content: "";
+  height: 26px;
+  left: 16px;
+  position: absolute;
+  top: 8px;
+  width: 16px;
 }
 
 #hero {
