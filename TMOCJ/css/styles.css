@@ -209,7 +209,8 @@ section h2 {
 #support .subscribe {
   display: flex;
   height: 32px;
-  margin: 0 48px;
+  padding: 0 32px;
+  width: 100%;
 }
 
 #support .subscribe input,
