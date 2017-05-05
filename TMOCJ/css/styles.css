@@ -62,6 +62,8 @@ h4, h5, p {
   background-color: #b69b87;
 }
 
+
+
 .btn-trailer::before {
   background-image: url("../img/icon-play.png");
   background-position: center;
