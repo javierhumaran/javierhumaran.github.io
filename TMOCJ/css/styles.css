@@ -217,6 +217,7 @@ section h2 {
 #support .subscribe {
   display: flex;
   height: 32px;
+  justify-content: space-around;
   padding: 0 32px;
   width: 100%;
 }
