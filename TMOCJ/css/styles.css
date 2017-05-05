@@ -62,8 +62,6 @@ h4, h5, p {
   background-color: #b69b87;
 }
 
-
-
 .btn-trailer::before {
   background-image: url("../img/icon-play.png");
   background-position: center;
@@ -77,7 +75,7 @@ h4, h5, p {
 
 #hero {
   background-image: url("../img/image-background.png");
-  background-position: -544px 0;
+  /*background-position: -544px 0;*/
   background-size: cover;
   height: 100vh;
 }
@@ -217,7 +215,6 @@ section h2 {
 #support .subscribe {
   display: flex;
   height: 32px;
-  justify-content: space-around;
   padding: 0 32px;
   width: 100%;
 }
