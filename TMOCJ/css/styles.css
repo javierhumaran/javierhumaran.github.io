@@ -105,6 +105,19 @@ h4, h5, p {
   display: flex;
   height: 56px;
   padding: 0 20px;
+  position: fixed;
+  transition: background-color 300ms ease-out;
+  -webkit-transition: background-color 300ms ease-out;
+  -ms-transition: background-color 300ms ease-out;
+  width: 100%;
+  z-index: 2;
+}
+
+#hero nav.black {
+  background-color: black;
+  transition: background-color 300ms ease-out;
+  -webkit-transition: background-color 300ms ease-out;
+  -ms-transition: background-color 300ms ease-out;
 }
 
 #hero nav .icon-menu {
@@ -420,12 +433,6 @@ section h2 {
 @media (min-width: 1024px) {
   #hero {
     height: 100vh;
-  }
-
-  #hero nav {
-    position: fixed;
-    width: 100%;
-    z-index: 2;
   }
 
   #hero nav .icon-menu,
