@@ -420,6 +420,10 @@ section h2 {
 
 /** DESKTOP **/
 @media (min-width: 1024px) {
+  #hero {
+    height: 100vh;
+  }
+
   #hero nav .icon-menu,
   #hero nav p {
     display: none;
