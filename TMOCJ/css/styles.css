@@ -425,7 +425,7 @@ section h2 {
   #hero nav {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
   }
 
   #hero nav .icon-menu,
@@ -449,5 +449,9 @@ section h2 {
 
   #cast article {
     flex-basis: calc(100%/3);
+  }
+
+  #gallery {
+    height: 640px;
   }
 }
