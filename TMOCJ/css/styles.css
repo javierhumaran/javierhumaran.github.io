@@ -224,7 +224,7 @@ section h2 {
   background-image: url("../img/gallery.png");
   background-size: cover;
   background-position: -80px 0;
-  height: 283px;
+  height: 100%;
 }
 
 #support {
@@ -356,5 +356,13 @@ section h2 {
 
   #cast article {
     width: 50%;
+  }
+
+  #gallery {
+    height: 405px;
+  }
+
+  #gallery article.image {
+    background-position: 0;
   }
 }
