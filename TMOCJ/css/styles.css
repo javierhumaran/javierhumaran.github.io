@@ -33,6 +33,12 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+p {
+  color: #D4D4D4;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+}
+
 .gold {
   color: #b69b87;
   font-family: 'Lora', serif;
@@ -149,7 +155,7 @@ section h2 {
 
 #synopsis {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   padding: 16px 0 48px;
 }
 
@@ -323,5 +329,22 @@ section h2 {
 
   section h2 {
     display: none;
+  }
+
+  #synopsis {
+    flex-direction: row-reverse;
+    padding-top: 64px;
+  }
+
+  #synopsis img {
+    height: 35%;
+    margin-right: 48px;
+    width: 35%;
+  }
+
+  #synopsis p {
+    margin: auto;
+    padding: 0 0 0 40px;
+    width: 65%;
   }
 }
