@@ -285,6 +285,7 @@ section h2 {
 }
 
 #support .social-media a {
+  background-repeat: no-repeat;
   background-size: 100%;
   height: 40px;
   width: 40px;
@@ -364,5 +365,18 @@ section h2 {
 
   #gallery article.image {
     background-position: 0;
+  }
+
+  #support h1 {
+    font-size: 24px;
+    margin: 40px 40px 16px;
+  }
+
+  #support .subscribe {
+    max-width: 424px;
+  }
+
+  #support .social-media {
+    max-width: 400px;
   }
 }
