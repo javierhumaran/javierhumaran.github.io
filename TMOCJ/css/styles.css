@@ -347,4 +347,14 @@ section h2 {
     padding: 0 0 0 40px;
     width: 65%;
   }
+
+  #cast {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  #cast article {
+    width: 50%;
+  }
 }
