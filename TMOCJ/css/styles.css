@@ -440,4 +440,8 @@ section h2 {
     margin: auto 0 auto auto;
     max-width: 560px;
   }
+
+  #cast article {
+    flex-basis: calc(100%/3);
+  }
 }
