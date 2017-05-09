@@ -104,21 +104,48 @@ h4, h5, p {
   background-color: rgba(0, 0, 0, 0.28);
   display: flex;
   height: 56px;
-  padding: 12px 20px;
+  padding: 0 20px;
 }
 
-#hero nav img {
-  padding: 8px 0;
+#hero nav .icon-menu {
+  background-image: url("../img/icon-menu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 48px;
 }
 
 #hero nav p {
   font-size: 12px;
   font-family: 'Lora', serif;
   font-weight: bold;
-  line-height: 16px;
+  line-height: 56px;
   text-align: center;
-  padding: 8px 0;
   width: 100%;
+}
+
+#hero nav .menu-items {
+  display: none;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding: 0;
+  width: 480px;
+}
+
+#hero nav .menu-items li {
+  height: 100%;
+  line-height: 56px;
+  min-width: 64px;
+  text-align: center;
+}
+
+#hero nav .menu-items li.active {
+  border-bottom: 2px solid #b69b87;
 }
 
 #hero .container {
@@ -140,6 +167,10 @@ h4, h5, p {
   text-shadow: 0 0 22px rgba(0, 0, 0, 0.5);
 }
 
+#hero .btn-donate {
+  display: none;
+}
+
 section {
   margin-bottom: 16px;
 }
@@ -159,6 +190,11 @@ section h2 {
   padding: 16px 0 48px;
 }
 
+#synopsis img {
+  margin: 0 auto;
+  max-width: 360px;
+}
+
 #synopsis p {
   margin-top: 32px;
   padding: 0 32px;
@@ -170,7 +206,6 @@ section h2 {
   flex-direction: column;
   height: 280px;
   justify-content: flex-end;
-  max-width: 423px;
   text-align: center;
   position: relative;
 }
@@ -225,6 +260,7 @@ section h2 {
   background-size: cover;
   background-position: -80px 0;
   height: 100%;
+  min-height: 283px;
 }
 
 #support {
@@ -317,6 +353,7 @@ section h2 {
 
   #hero .btn-donate {
     bottom: 24px;
+    display: block;
     height: 64px;
     position: absolute;
     right: 24px;
@@ -356,7 +393,7 @@ section h2 {
   }
 
   #cast article {
-    width: 50%;
+    flex-basis: 50%;
   }
 
   #gallery {
@@ -378,5 +415,17 @@ section h2 {
 
   #support .social-media {
     max-width: 400px;
+  }
+}
+
+/** DESKTOP **/
+@media (min-width: 1024px) {
+  #hero nav .icon-menu,
+  #hero nav p {
+    display: none;
+  }
+
+  #hero nav .menu-items {
+    display: flex;
   }
 }
