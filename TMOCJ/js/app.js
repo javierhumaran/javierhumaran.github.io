@@ -23,8 +23,11 @@ $(document).ready(function(){
     body.addClass("no-scroll");
     navbar.addClass("transparent");
     menuOverlay.addClass("active");
-    menuOverlay.addClass("opacity");
     heroSection.addClass("blurred");
+
+    setTimeout(function() {
+      menuOverlay.addClass("opacity");
+    }, 50);
 
   });
 
@@ -38,7 +41,7 @@ $(document).ready(function(){
 
       setTimeout(function() {
         menuOverlay.removeClass("active");
-      }, 600);
+      }, 400);
 
     }
 
