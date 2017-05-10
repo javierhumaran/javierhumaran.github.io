@@ -73,6 +73,11 @@ h4, h5, p {
   background-color: #b69b87;
 }
 
+.btn-trailer:hover {
+  background-color: #b69b87;
+  cursor: pointer;
+}
+
 .btn-trailer::before {
   background-image: url("../img/icon-play.png");
   background-position: center;
@@ -101,6 +106,7 @@ h4, h5, p {
 #navbar {
   background-color: rgba(0, 0, 0, 0.28);
   display: flex;
+  flex-wrap: wrap;
   height: 56px;
   padding: 0 20px;
   position: fixed;
@@ -187,10 +193,15 @@ h4, h5, p {
 #navbar .menu-items li {
   height: 100%;
   line-height: 56px;
-  margin-top: 8px;
   max-height: 56px;
   min-width: 64px;
   text-align: center;
+}
+
+#navbar .menu-items li a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
 
 #navbar .menu-items li.active {
@@ -229,6 +240,7 @@ h4, h5, p {
 
 section {
   margin-bottom: 16px;
+  padding-top: 56px !important;
 }
 
 section h2 {
