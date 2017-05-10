@@ -23,6 +23,7 @@ $(document).ready(function(){
     body.addClass("no-scroll");
     navbar.addClass("transparent");
     menuOverlay.addClass("active");
+    menuOverlay.addClass("opacity");
     heroSection.addClass("blurred");
 
   });
@@ -32,9 +33,16 @@ $(document).ready(function(){
     if (menuOverlay.hasClass("active")) {
       body.removeClass("no-scroll");
       navbar.removeClass("transparent");
-      menuOverlay.removeClass("active");
+      menuOverlay.removeClass("opacity");
       heroSection.removeClass("blurred");
+
+      setTimeout(function() {
+        menuOverlay.removeClass("active");
+      }, 600);
+
     }
+
+
 
   });
 

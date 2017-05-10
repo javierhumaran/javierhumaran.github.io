@@ -153,9 +153,9 @@ h4, h5, p {
   margin: 0 auto;
   text-transform: uppercase;
   padding: 0;
-  transition: all 300ms ease-out;
-  -webkit-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
+  transition: opacity 150ms ease-out;
+  -webkit-transition: opacity 150ms ease-out;
+  -ms-transition: opacity 150ms ease-out;
   width: 100%;
 }
 
@@ -167,13 +167,16 @@ h4, h5, p {
   height: 100vh;
   justify-content: flex-start;
   left: 0;
-  opacity: 1;
   padding: 56px 64px;
   position: absolute;
   top: 0;
-  transition: all 300ms ease-out;
-  -webkit-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
+}
+
+#navbar .menu-items.opacity {
+  opacity: 1;
+  transition: opacity 400ms ease-out;
+  -webkit-transition: opacity 400ms ease-out;
+  -ms-transition: opacity 400ms ease-out;
 }
 
 #navbar .menu-items.active li {
