@@ -51,6 +51,7 @@ h4, h5, p {
 
 .no-scroll {
   overflow: hidden;
+  position: fixed;
 }
 
 .btn-trailer {
