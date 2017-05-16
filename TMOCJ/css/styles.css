@@ -211,11 +211,33 @@ h4, h5, p {
   text-decoration: none;
 }
 
+#home-video {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: auto;
+}
+
 #hero {
   background-image: url("../img/image-background.png");
   background-position: -544px 0;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
+}
+
+#hero:after {
+  background-color: black;
+  content: "";
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 #hero .container {
@@ -229,6 +251,7 @@ h4, h5, p {
 #hero .container .info {
   margin: 0 auto;
   max-width: 704px;
+  z-index: 1;
 }
 
 #hero .container h1,
@@ -239,6 +262,7 @@ h4, h5, p {
 
 #hero .btn-donate {
   display: none;
+  z-index: 1;
 }
 
 section {
@@ -512,6 +536,14 @@ section h2 {
 
   #hero {
     height: 100vh;
+  }
+
+  #hero::after {
+    display: block;
+  }
+
+  #home-video {
+    display: block;
   }
 
   #synopsis {
