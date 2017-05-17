@@ -39,7 +39,7 @@ $(document).ready(function(){
         if (section[0].id != currentSection[0].id) {
           var secDif = scroll - section[0].offsetTop;
 
-          // Convers negative amounts to positive
+          // Converts negative amounts to positive
           if (secDif < 0) {
             secDif = secDif * -1;
           }
@@ -60,18 +60,18 @@ $(document).ready(function(){
       } else {
         navbar.removeClass("black");
       }
+      console.log("Did scroll");
     }
   });
 
   menuButton.click(function() {
+    // Disables scrollable function
     scrollable = false;
+
     currentScroll = $(window).scrollTop();
     body.addClass("no-scroll");
     navbar.addClass("transparent");
     menuOverlay.addClass("active");
-    // for (i = 0; i < sections.length; i++){
-    //   $(sections[i].addClass("blurred"));
-    // }
     heroSection.addClass("blurred");
 
     setTimeout(function() {
@@ -81,6 +81,7 @@ $(document).ready(function(){
 
   menuOverlay.click(function() {
     if (menuOverlay.hasClass("active")) {
+      console.log("Clicked on overlay");
       // Fade out the menu overlay and set back to normal the other elements
       body.removeClass("no-scroll");
       navbar.removeClass("transparent");
@@ -88,23 +89,37 @@ $(document).ready(function(){
       heroSection.removeClass("blurred");
 
       // Set scroll position back to original before opening the menu
-      scrollable = true;
       window.scrollTo(0, currentScroll);
+
+      setTimeout(function() {
+        // Enables scrollable function
+        console.log("Scrollale true from overlay")
+        scrollable = true;
+      }, 50);
 
       setTimeout(function() {
         // Removes all the attributes left to the menu overlay
         menuOverlay.removeClass("active");
-      }, 400);
+      }, 350);
     }
   });
 
   menuOptions.click(function() {
+    // Disables scrollable function
+    scrollable = false;
+    console.log("Scrollable false from li");
+
     // Remove active class from all menu elements
     for (i = 0; i < menuOptions.length; i++) {
       $(menuOptions[i]).removeClass("active");
     }
     // Add active class to selected element
     $(this).addClass("active");
+
+    setTimeout(function() {
+      scrollable = true;
+      console.log("Scrollable true from li");
+    }, 50);
   });
 
 });
