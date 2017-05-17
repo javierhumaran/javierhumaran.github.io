@@ -456,7 +456,6 @@ section h2 {
 @media (min-width: 768px) {
   #hero {
     background-position: center;
-    height: 398px;
     position: relative;
   }
 
@@ -474,10 +473,6 @@ section h2 {
     max-width: 488px;
   }
 
-  section h2 {
-    display: none;
-  }
-
   #synopsis .container {
     flex-direction: row-reverse;
     padding: 48px;
@@ -485,6 +480,11 @@ section h2 {
 
   #synopsis .container p {
     margin: 0;
+    padding-right: 16px;
+  }
+
+  #synopsis .container img {
+    max-width: 320px;
   }
 
   #cast {
@@ -534,6 +534,10 @@ section h2 {
     width: 560px;
   }
 
+  section h2 {
+    display: none;
+  }
+
   #hero {
     height: 100vh;
   }
@@ -551,9 +555,14 @@ section h2 {
     justify-content: center;
   }
 
-  #synopsis p {
+  #synopsis .container p {
     margin: auto 0 auto auto;
     max-width: 560px;
+    padding-right: 32px;
+  }
+
+  #synopsis .container img {
+    max-width: 360px;
   }
 
   #cast article {
