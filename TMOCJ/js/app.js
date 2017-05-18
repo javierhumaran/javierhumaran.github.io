@@ -14,6 +14,11 @@ $(document).ready(function(){
   var sections        = [heroSection, synopsisSection, castSection,
                         gallerySection, supportSection];
 
+
+  var castOptions     = $("#cast article");
+  var castDetail      = $("#cast-detail");
+  var btnClose        = $("#cast-detail .btn-close");
+
   var scrollable = true;
   var currentSection   = heroSection;
   var currentScroll;
@@ -121,5 +126,36 @@ $(document).ready(function(){
       console.log("Scrollable true from li");
     }, 50);
   });
+
+  castOptions.click(function () {
+    $(navbar).css( "background-color", "black" );
+
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      body.removeClass("no-scroll");
+
+      var positionToGo = $(this)[0].offsetTop - 56;
+      window.scrollTo(0, positionToGo);
+      $(navbar).css( "background-color", "" );
+    }
+    else {
+      $(this).addClass("active");
+      body.addClass("no-scroll");
+    }
+  });
+
+  // castOptions.click(function() {
+  //   castDetail.addClass("active");
+  //   // body.addClass("no-scroll");
+  //
+  //   setTimeout(function() {
+  //     castDetail.addClass("opacity");
+  //   }, 50);
+  // });
+  //
+  // btnClose.click(function() {
+  //   castDetail.removeClass("active");
+  //   body.removeClass("no-scroll");
+  // });
 
 });

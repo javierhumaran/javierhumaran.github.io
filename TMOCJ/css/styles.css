@@ -54,6 +54,10 @@ h4, h5, p {
   position: fixed;
 }
 
+.no-overflow {
+  overflow: hidden;
+}
+
 .btn-trailer {
   background-color: transparent;
   border: 1px solid #b69b87;
@@ -283,7 +287,6 @@ section h2 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 56px);
   padding: 16px 0 48px;
 }
 
@@ -309,10 +312,18 @@ section h2 {
   height: 280px;
   justify-content: flex-end;
   text-align: center;
+  overflow: hidden;
   position: relative;
 }
 
-#cast article:before {
+#cast article img {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#cast article:after {
   background-color: #000;
   content: "";
   height: 100%;
@@ -333,28 +344,63 @@ section h2 {
   z-index: 1;
 }
 
-#cast article.carl {
-  background-image: url("../img/carl.png");
+#cast article p:last-of-type {
+  height: 0;
+  margin: 0;
+  opacity: 0;
 }
 
-#cast article.whip {
-  background-image: url("../img/whip.png");
+#cast article.active {
+  background-color: rgba(0,0,0,1);
+  overflow: auto;
+  position: absolute;
+  height: 100vh;
+  justify-content: flex-start;
+  left: 0;
+  text-align: left;
+  top: 0;
+  z-index: 9;
 }
 
-#cast article.cane {
-  background-image: url("../img/cane.png");
+#cast article.active img {
+  height: auto;
+  max-height: 296px;
+  position: relative;
+  width: 100%;
 }
 
-#cast article.panto {
-  background-image: url("../img/panto.png");
+#cast article.active h3,
+#cast article.active p,
+#cast article.active p:last-of-type {
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
-#cast article.allyson {
-  background-image: url("../img/allyson.png");
+#cast article.active h3 {
+  font-size: 40px;
+  margin-top: 56px;
 }
 
-#cast article.boots {
-  background-image: url("../img/boots.png");
+#cast article.active p:first-of-type {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 32px;
+
+  transition: font-size 400ms ease-out;
+  -webkit-transition: font-size 400ms ease-out;
+  -ms-transition: font-size 400ms ease-out;
+}
+
+#cast article.active p:last-of-type {
+  height: auto;
+  margin-bottom: 32px;
+  opacity: 1;
+  white-space: pre-line;
+
+  transition: opacity 400ms ease-out;
+  -webkit-transition: opacity 400ms ease-out;
+  -ms-transition: opacity 400ms ease-out;
 }
 
 #gallery article.image {
@@ -472,6 +518,10 @@ section h2 {
   #hero .container h1 {
     font-size: 40px;
     max-width: 488px;
+  }
+
+  #synopsis {
+    height: calc(100vh - 56px);
   }
 
   #synopsis .container {
