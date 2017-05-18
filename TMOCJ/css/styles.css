@@ -444,7 +444,7 @@ section h2 {
 
 #cast article.active p:last-of-type {
   height: auto;
-  margin-bottom: 32px;
+  margin-bottom: 80px;
   opacity: 1;
   white-space: pre-line;
 
