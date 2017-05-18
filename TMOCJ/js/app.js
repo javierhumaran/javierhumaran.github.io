@@ -17,9 +17,10 @@ $(document).ready(function(){
 
   var castOptions     = $("#cast article");
   var castDetail      = $("#cast-detail");
-  var btnClose        = $("#cast-detail .btn-close");
+  var btnClose        = $(".btn-close");
 
   var scrollable = true;
+  var castOpen   = false;
   var currentSection   = heroSection;
   var currentScroll;
 
@@ -130,18 +131,32 @@ $(document).ready(function(){
   castOptions.click(function () {
     $(navbar).css( "background-color", "black" );
 
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      body.removeClass("no-scroll");
-
-      var positionToGo = $(this)[0].offsetTop - 56;
-      window.scrollTo(0, positionToGo);
-      $(navbar).css( "background-color", "" );
-    }
-    else {
+    if (castOpen === false) {
+      castOpen = true;
       $(this).addClass("active");
       body.addClass("no-scroll");
     }
+
+  });
+
+  castOptions.scroll(function() {
+    console.log($(this));
+  });
+
+  btnClose.click(function() {
+    console.log("boton" + castOpen);
+
+    var actorSelected = $(this)[0].offsetParent;
+    $(actorSelected).removeClass("active");
+    body.removeClass("no-scroll");
+
+    var positionToGo = $(actorSelected)[0].offsetTop - 56;
+    window.scrollTo(0, positionToGo);
+    $(navbar).css( "background-color", "" );
+
+    setTimeout(function() {
+      castOpen = false;
+    }, 50);
   });
 
   // castOptions.click(function() {
