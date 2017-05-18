@@ -212,6 +212,7 @@ h4, h5, p {
 #navbar .menu-items li a {
   cursor: pointer;
   color: inherit;
+  display: block;
   text-decoration: none;
 }
 
