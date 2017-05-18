@@ -306,6 +306,7 @@ section h2 {
 }
 
 #cast article {
+  background-color: #000;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -351,7 +352,6 @@ section h2 {
 }
 
 #cast article.active {
-  background-color: rgba(0,0,0,1);
   overflow: auto;
   position: absolute;
   height: 100vh;
@@ -360,6 +360,38 @@ section h2 {
   text-align: left;
   top: 0;
   z-index: 9;
+
+  transition: background-color 400ms ease-out;
+  -webkit-transition: background-color 400ms ease-out;
+  -ms-transition: background-color 400ms ease-out;
+}
+
+#cast article.active.carl {
+  background-color: #7d6a60;
+}
+
+#cast article.active.whip {
+  background-color: #030503;
+}
+
+#cast article.active.cane {
+  background-color: #4a4f60;
+}
+
+#cast article.active.panto {
+  background-color: #847268;
+}
+
+#cast article.active.allyson {
+  background-color: #92765e;
+}
+
+#cast article.active.boots {
+  background-color: #0f120d;
+}
+
+#cast article.active::after {
+  opacity: 0;
 }
 
 #cast article.active img {
@@ -372,6 +404,7 @@ section h2 {
 #cast article.active h3,
 #cast article.active p,
 #cast article.active p:last-of-type {
+  color: #fff;
   margin-left: 32px;
   margin-right: 32px;
 }
