@@ -66,7 +66,6 @@ $(document).ready(function(){
       } else {
         navbar.removeClass("black");
       }
-      console.log("Did scroll");
     }
   });
 
@@ -87,7 +86,6 @@ $(document).ready(function(){
 
   menuOverlay.click(function() {
     if (menuOverlay.hasClass("active")) {
-      console.log("Clicked on overlay");
       // Fade out the menu overlay and set back to normal the other elements
       body.removeClass("no-scroll");
       navbar.removeClass("transparent");
@@ -113,7 +111,6 @@ $(document).ready(function(){
   menuOptions.click(function() {
     // Disables scrollable function
     scrollable = false;
-    console.log("Scrollable false from li");
 
     // Remove active class from all menu elements
     for (i = 0; i < menuOptions.length; i++) {
@@ -124,12 +121,11 @@ $(document).ready(function(){
 
     setTimeout(function() {
       scrollable = true;
-      console.log("Scrollable true from li");
     }, 50);
   });
 
   castOptions.click(function () {
-    $(navbar).css( "background-color", "black" );
+    $(navbar).css("background-color", "black");
 
     if (castOpen === false) {
       castOpen = true;
@@ -139,38 +135,18 @@ $(document).ready(function(){
 
   });
 
-  castOptions.scroll(function() {
-    console.log($(this));
-  });
-
   btnClose.click(function() {
-    console.log("boton" + castOpen);
-
     var actorSelected = $(this)[0].offsetParent;
     $(actorSelected).removeClass("active");
     body.removeClass("no-scroll");
 
     var positionToGo = $(actorSelected)[0].offsetTop - 56;
     window.scrollTo(0, positionToGo);
-    $(navbar).css( "background-color", "" );
 
     setTimeout(function() {
       castOpen = false;
+      $(navbar).css("background-color", "");
     }, 50);
   });
-
-  // castOptions.click(function() {
-  //   castDetail.addClass("active");
-  //   // body.addClass("no-scroll");
-  //
-  //   setTimeout(function() {
-  //     castDetail.addClass("opacity");
-  //   }, 50);
-  // });
-  //
-  // btnClose.click(function() {
-  //   castDetail.removeClass("active");
-  //   body.removeClass("no-scroll");
-  // });
 
 });
