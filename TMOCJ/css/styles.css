@@ -341,6 +341,44 @@ section h2 {
   top: 0;
 }
 
+#cast article .img-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#cast article.carl .img-container {
+  background-color: #7d6a60;
+  background-image: url("../img/carl.png");
+}
+
+#cast article.whip .img-container {
+  background-color: #030503;
+  background-image: url("../img/whip.png");
+}
+
+#cast article.cane .img-container {
+  background-color: #4a4f60;
+  background-image: url("../img/cane.png");
+}
+
+#cast article.panto .img-container {
+  background-color: #847268;
+  background-image: url("../img/panto.png");
+}
+
+#cast article.allyson .img-container {
+  background-color: #92765e;
+  background-image: url("../img/allyson.png");
+}
+
+#cast article.boots .img-container {
+  background-color: #0f120d;
+  background-image: url("../img/boots.png");
+}
+
 #cast article:after {
   background-color: #000;
   content: "";
@@ -382,6 +420,11 @@ section h2 {
   transition: background-color 400ms ease-out;
   -webkit-transition: background-color 400ms ease-out;
   -ms-transition: background-color 400ms ease-out;
+}
+
+#cast article.active .img-container {
+  padding: 140px 0;
+  position: relative;
 }
 
 #cast article.active.carl {
@@ -672,5 +715,17 @@ section h2 {
 
   #gallery {
     height: 640px;
+  }
+}
+
+/** DESKTOP HD **/
+@media (min-width: 1332px) {
+  #home-video {
+    height: auto;
+    width: 100%;
+  }
+
+  #cast article .img-container {
+    background-size: 100%;
   }
 }
