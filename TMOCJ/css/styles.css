@@ -302,6 +302,8 @@ section h2 {
 }
 
 #synopsis .container p {
+  font-size: 20px;
+  line-height: 28px;
   margin-top: 32px;
   padding: 0 32px;
 }
@@ -391,17 +393,21 @@ section h2 {
   width: 100%;
 }
 
-#cast article h3 {
+#cast article .content {
+  z-index: 1;
+}
+
+#cast article .content h3 {
   margin-bottom: 4px;
   z-index: 1;
 }
 
-#cast article p {
+#cast article .content p {
   margin-bottom: 40px;
   z-index: 1;
 }
 
-#cast article p:last-of-type {
+#cast article .content p:last-of-type {
   height: 0;
   margin: 0;
   opacity: 0;
@@ -416,6 +422,7 @@ section h2 {
   text-align: left;
   top: 0;
   -webkit-overflow-scrolling: touch;
+  width: 100%;
   z-index: 9;
 
   transition: background-color 400ms ease-out;
@@ -632,6 +639,8 @@ section h2 {
 
   #hero .container h1 {
     font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 488px;
   }
 
@@ -661,6 +670,58 @@ section h2 {
 
   #cast article {
     flex-basis: 50%;
+  }
+
+  #cast article.active {
+    flex-direction: row;
+  }
+
+  #cast article.active:before {
+    content: "";
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  #cast article.active.carl:before {
+    background: linear-gradient(to left, rgba(125, 106, 96, 1) 45%, rgba(125, 106, 96, .5) 75%, rgba(125, 106, 96, .2) 90%, transparent);
+  }
+
+  #cast article.active.whip:before {
+    background: linear-gradient(to left, rgba(3, 5, 3, 1) 45%, rgba(3, 5, 3, .5) 75%, rgba(3, 5, 3, .2) 90%, transparent);
+  }
+
+  #cast article.active.cane:before {
+    background: linear-gradient(to left, rgba(74, 79, 96, 1) 45%, rgba(74, 79, 96, .5) 75%, rgba(74, 79, 96, .2) 90%, transparent);
+  }
+
+  #cast article.active.panto:before {
+    background: linear-gradient(to left, rgba(132, 114, 104, 1) 45%, rgba(132, 114, 104, .5) 75%, rgba(132, 114, 104, .2) 90%, transparent);
+  }
+
+  #cast article.active.allyson:before {
+    background: linear-gradient(to left, rgba(146, 118, 94, 1) 45%, rgba(146, 118, 94, .5) 75%, rgba(146, 118, 94, .2) 90%, transparent);
+  }
+
+  #cast article.active.boots:before {
+    background: linear-gradient(to left, rgba(15, 18, 13, 1) 45%, rgba(15, 18, 13, .5) 75%, rgba(15, 18, 13, .2) 90%, transparent);
+  }
+
+  #cast article.active .content {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  #cast article.active .img-container {
+    height: 100%;
+    padding: 0;
+    background-size: auto 100%;
+    background-position: -300px 0;
   }
 
   #gallery {
