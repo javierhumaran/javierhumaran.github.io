@@ -711,10 +711,18 @@ section h2 {
   }
 
   #cast article.active .content {
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    padding-bottom: 32px;
     position: absolute;
     right: 0;
     width: 50%;
+  }
+
+  #cast article.active .content p:last-of-type {
+    margin-bottom: 0;
+    overflow: auto;
   }
 
   #cast article.active .img-container {
