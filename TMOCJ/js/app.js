@@ -128,8 +128,18 @@ $(document).ready(function(){
     $(navbar).css("background-color", "black");
 
     if (castOpen === false) {
+      var cast = $(this);
+      var content = $(this)[0].childNodes[5];
+
       castOpen = true;
-      $(this).addClass("active");
+      $(content).css("opacity", "0");
+      $(cast).addClass("active");
+
+      setTimeout(function() {
+        $(content).css("transition", "opacity 600ms ease-out");
+        $(content).css("opacity", "1");
+      }, 50);
+
       body.addClass("no-scroll");
     }
 
@@ -137,7 +147,11 @@ $(document).ready(function(){
 
   btnClose.click(function() {
     var actorSelected = $(this)[0].offsetParent;
+    var content = $(actorSelected)[0].childNodes[5];
+
     $(actorSelected).removeClass("active");
+    $(content).css("opacity", "");
+    $(content).css("transition", "");
     body.removeClass("no-scroll");
 
     var positionToGo = $(actorSelected)[0].offsetTop - 56;
