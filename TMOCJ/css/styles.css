@@ -424,6 +424,7 @@ section h2 {
 }
 
 #cast article.active .img-container {
+  height: 280px;
   padding: 140px 0;
   position: relative;
 }
