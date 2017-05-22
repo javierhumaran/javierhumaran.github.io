@@ -630,11 +630,11 @@ section h2 {
   }
 
   #hero .btn-donate {
-    bottom: 24px;
+    bottom: 48px;
     display: block;
     height: 64px;
     position: absolute;
-    right: 24px;
+    right: 48px;
     width: 160px;
   }
 
@@ -678,66 +678,6 @@ section h2 {
     height: 500px;
     padding: 250px 0;
   }
-
-  /*#cast article.active {
-    flex-direction: row;
-  }
-
-  #cast article.active:before {
-    content: "";
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-  }
-
-  #cast article.active.carl:before {
-    background: linear-gradient(to left, rgba(125, 106, 96, 1) 45%, rgba(125, 106, 96, .5) 75%, rgba(125, 106, 96, .2) 90%, transparent);
-  }
-
-  #cast article.active.whip:before {
-    background: linear-gradient(to left, rgba(3, 5, 3, 1) 45%, rgba(3, 5, 3, .5) 75%, rgba(3, 5, 3, .2) 90%, transparent);
-  }
-
-  #cast article.active.cane:before {
-    background: linear-gradient(to left, rgba(74, 79, 96, 1) 45%, rgba(74, 79, 96, .5) 75%, rgba(74, 79, 96, .2) 90%, transparent);
-  }
-
-  #cast article.active.panto:before {
-    background: linear-gradient(to left, rgba(132, 114, 104, 1) 45%, rgba(132, 114, 104, .5) 75%, rgba(132, 114, 104, .2) 90%, transparent);
-  }
-
-  #cast article.active.allyson:before {
-    background: linear-gradient(to left, rgba(146, 118, 94, 1) 45%, rgba(146, 118, 94, .95) 75%, rgba(146, 118, 94, .2) 90%, transparent);
-  }
-
-  #cast article.active.boots:before {
-    background: linear-gradient(to left, rgba(15, 18, 13, 1) 45%, rgba(15, 18, 13, .5) 75%, rgba(15, 18, 13, .2) 90%, transparent);
-  }
-
-  #cast article.active .content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-bottom: 32px;
-    position: absolute;
-    right: 0;
-    width: 50%;
-  }
-
-  #cast article.active .content p:last-of-type {
-    margin-bottom: 0;
-    overflow: auto;
-  }
-
-  #cast article.active .img-container {
-    height: 100%;
-    padding: 0;
-    background-size: auto 100%;
-    background-position: -300px 0;
-  }*/
 
   #gallery {
     height: calc(100vh - 56px);
@@ -814,6 +754,67 @@ section h2 {
 
   #cast article {
     flex-basis: calc(100%/3);
+  }
+
+  #cast article.active {
+    flex-direction: row;
+  }
+
+  #cast article.active:before {
+    content: "";
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  #cast article.active.carl:before {
+    /*background-position: -180px;*/
+    /*background: linear-gradient(to left, rgba(125, 106, 96, 1) 45%, rgba(125, 106, 96, .5) 75%, rgba(125, 106, 96, .2) 90%, transparent);*/
+  }
+
+  #cast article.active.whip:before {
+    /*background: linear-gradient(to left, rgba(3, 5, 3, 1) 45%, rgba(3, 5, 3, .5) 75%, rgba(3, 5, 3, .2) 90%, transparent);*/
+  }
+
+  #cast article.active.cane:before {
+    /*background: linear-gradient(to left, rgba(74, 79, 96, 1) 45%, rgba(74, 79, 96, .5) 75%, rgba(74, 79, 96, .2) 90%, transparent);*/
+  }
+
+  #cast article.active.panto:before {
+    /*background: linear-gradient(to left, rgba(132, 114, 104, 1) 45%, rgba(132, 114, 104, .5) 75%, rgba(132, 114, 104, .2) 90%, transparent);*/
+  }
+
+  #cast article.active.allyson:before {
+    /*background: linear-gradient(to left, rgba(146, 118, 94, 1) 45%, rgba(146, 118, 94, .95) 75%, rgba(146, 118, 94, .2) 90%, transparent);*/
+  }
+
+  #cast article.active.boots:before {
+    /*background: linear-gradient(to left, rgba(15, 18, 13, 1) 45%, rgba(15, 18, 13, .5) 75%, rgba(15, 18, 13, .2) 90%, transparent);*/
+  }
+
+  #cast article.active .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 32px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  #cast article.active .content p:last-of-type {
+    margin-bottom: 0;
+    overflow: auto;
+  }
+
+  #cast article.active .img-container {
+    height: 100%;
+    padding: 0;
+    background-size: auto 100%;
+    background-position: -250px 0;
   }
 
   #gallery {
