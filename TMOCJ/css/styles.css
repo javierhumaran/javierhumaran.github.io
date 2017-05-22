@@ -346,6 +346,7 @@ section h2 {
 #cast article .img-container {
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   position: absolute;
   top: 0;
@@ -354,32 +355,32 @@ section h2 {
 
 #cast article.carl .img-container {
   background-color: #7d6a60;
-  background-image: url("../img/carl.png");
+  background-image: url("../img/carl.jpg");
 }
 
 #cast article.whip .img-container {
   background-color: #030503;
-  background-image: url("../img/whip.png");
+  background-image: url("../img/whip.jpg");
 }
 
 #cast article.cane .img-container {
   background-color: #4a4f60;
-  background-image: url("../img/cane.png");
+  background-image: url("../img/cane.jpg");
 }
 
 #cast article.panto .img-container {
   background-color: #847268;
-  background-image: url("../img/panto.png");
+  background-image: url("../img/panto.jpg");
 }
 
 #cast article.allyson .img-container {
   background-color: #92765e;
-  background-image: url("../img/allyson.png");
+  background-image: url("../img/allyson.jpg");
 }
 
 #cast article.boots .img-container {
   background-color: #0f120d;
-  background-image: url("../img/boots.png");
+  background-image: url("../img/boots.jpg");
 }
 
 #cast article:after {
@@ -649,13 +650,14 @@ section h2 {
   }
 
   #synopsis .container {
-    flex-direction: row-reverse;
+    height: 100%;
     padding: 48px;
   }
 
   #synopsis .container p {
-    margin: 0;
-    padding-right: 16px;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 32px 0 0 0;
   }
 
   #synopsis .container img {
@@ -672,7 +674,12 @@ section h2 {
     flex-basis: 50%;
   }
 
-  #cast article.active {
+  #cast article.active .img-container {
+    height: 500px;
+    padding: 250px 0;
+  }
+
+  /*#cast article.active {
     flex-direction: row;
   }
 
@@ -703,7 +710,7 @@ section h2 {
   }
 
   #cast article.active.allyson:before {
-    background: linear-gradient(to left, rgba(146, 118, 94, 1) 45%, rgba(146, 118, 94, .5) 75%, rgba(146, 118, 94, .2) 90%, transparent);
+    background: linear-gradient(to left, rgba(146, 118, 94, 1) 45%, rgba(146, 118, 94, .95) 75%, rgba(146, 118, 94, .2) 90%, transparent);
   }
 
   #cast article.active.boots:before {
@@ -730,7 +737,7 @@ section h2 {
     padding: 0;
     background-size: auto 100%;
     background-position: -300px 0;
-  }
+  }*/
 
   #gallery {
     height: calc(100vh - 56px);
@@ -789,7 +796,13 @@ section h2 {
     justify-content: center;
   }
 
+  #synopsis .container {
+    flex-direction: row-reverse;
+  }
+
   #synopsis .container p {
+    font-size: 20px;
+    line-height: 24px;
     margin: auto 0 auto auto;
     max-width: 560px;
     padding-right: 32px;
