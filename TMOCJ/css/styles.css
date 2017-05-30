@@ -355,32 +355,32 @@ section h2 {
 
 #cast article.carl .img-container {
   background-color: #7d6a60;
-  background-image: url("../img/carl.jpg");
+  background-image: url("../img/cast-mobile/carl.jpg");
 }
 
 #cast article.whip .img-container {
   background-color: #030503;
-  background-image: url("../img/whip.jpg");
+  background-image: url("../img/cast-mobile/whip.jpg");
 }
 
 #cast article.cane .img-container {
   background-color: #4a4f60;
-  background-image: url("../img/cane.jpg");
+  background-image: url("../img/cast-mobile/cane.jpg");
 }
 
 #cast article.panto .img-container {
   background-color: #847268;
-  background-image: url("../img/panto.jpg");
+  background-image: url("../img/cast-mobile/panto.jpg");
 }
 
 #cast article.allyson .img-container {
   background-color: #92765e;
-  background-image: url("../img/allyson.jpg");
+  background-image: url("../img/cast-mobile/allyson.jpg");
 }
 
 #cast article.boots .img-container {
   background-color: #0f120d;
-  background-image: url("../img/boots.jpg");
+  background-image: url("../img/cast-mobile/boots.jpg");
 }
 
 #cast article:after {
@@ -527,10 +527,21 @@ section h2 {
   text-align: center;
 }
 
+#support .subscribe-wrapper {
+  height: 32px;
+  max-width: 424px;
+  padding: 0 32px;
+  width: 100%;
+}
+
+#support .subscribe-wrapper form {
+  height: 100%;
+  width: 100%;
+}
+
 #support .subscribe {
   display: flex;
   height: 32px;
-  padding: 0 32px;
   width: 100%;
 }
 
@@ -553,7 +564,7 @@ section h2 {
   padding: 0 16px;
 }
 
-#support .subscribe button {
+#support .subscribe .button {
   background-color: #b69b87;
   border: 1px solid #b69b87;
   color: #fff;
@@ -675,8 +686,32 @@ section h2 {
   }
 
   #cast article.active .img-container {
-    height: 500px;
-    padding: 250px 0;
+    height: 30vh;
+    padding: 15vh 0;
+  }
+
+  #cast article.carl .img-container {
+    background-image: url("../img/cast-mobile/carl@2x.jpg");
+  }
+
+  #cast article.whip .img-container {
+    background-image: url("../img/cast-mobile/whip@2x.jpg");
+  }
+
+  #cast article.cane .img-container {
+    background-image: url("../img/cast-mobile/cane@2x.jpg");
+  }
+
+  #cast article.panto .img-container {
+    background-image: url("../img/cast-mobile/panto@2x.jpg");
+  }
+
+  #cast article.allyson .img-container {
+    background-image: url("../img/cast-mobile/allyson@2x.jpg");
+  }
+
+  #cast article.boots .img-container {
+    background-image: url("../img/cast-mobile/boots@2x.jpg");
   }
 
   #gallery {
