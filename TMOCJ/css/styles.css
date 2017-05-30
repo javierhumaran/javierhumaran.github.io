@@ -310,7 +310,6 @@ section h2 {
 
 #cast article {
   background-color: #000;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 280px;
@@ -805,29 +804,28 @@ section h2 {
     z-index: 1;
   }
 
-  #cast article.active.carl:before {
-    /*background-position: -180px;*/
-    /*background: linear-gradient(to left, rgba(125, 106, 96, 1) 45%, rgba(125, 106, 96, .5) 75%, rgba(125, 106, 96, .2) 90%, transparent);*/
+  #cast article.active.carl .img-container {
+    background-image: url("../img/cast-desktop/carl.jpg");
   }
 
-  #cast article.active.whip:before {
-    /*background: linear-gradient(to left, rgba(3, 5, 3, 1) 45%, rgba(3, 5, 3, .5) 75%, rgba(3, 5, 3, .2) 90%, transparent);*/
+  #cast article.active.whip .img-container {
+    background-image: url("../img/cast-desktop/whip.jpg");
   }
 
-  #cast article.active.cane:before {
-    /*background: linear-gradient(to left, rgba(74, 79, 96, 1) 45%, rgba(74, 79, 96, .5) 75%, rgba(74, 79, 96, .2) 90%, transparent);*/
+  #cast article.active.cane .img-container {
+    background-image: url("../img/cast-desktop/cane.jpg");
   }
 
-  #cast article.active.panto:before {
-    /*background: linear-gradient(to left, rgba(132, 114, 104, 1) 45%, rgba(132, 114, 104, .5) 75%, rgba(132, 114, 104, .2) 90%, transparent);*/
+  #cast article.active.panto .img-container {
+    background-image: url("../img/cast-desktop/panto.jpg");
   }
 
-  #cast article.active.allyson:before {
-    /*background: linear-gradient(to left, rgba(146, 118, 94, 1) 45%, rgba(146, 118, 94, .95) 75%, rgba(146, 118, 94, .2) 90%, transparent);*/
+  #cast article.active.allyson .img-container {
+    background-image: url("../img/cast-desktop/allyson.jpg");
   }
 
-  #cast article.active.boots:before {
-    /*background: linear-gradient(to left, rgba(15, 18, 13, 1) 45%, rgba(15, 18, 13, .5) 75%, rgba(15, 18, 13, .2) 90%, transparent);*/
+  #cast article.active.boots .img-container {
+    background-image: url("../img/cast-desktop/boots.jpg");
   }
 
   #cast article.active .content {
@@ -849,7 +847,6 @@ section h2 {
     height: 100%;
     padding: 0;
     background-size: auto 100%;
-    background-position: -250px 0;
   }
 
   #gallery {
@@ -860,11 +857,35 @@ section h2 {
 /** DESKTOP HD **/
 @media (min-width: 1332px) {
   #home-video {
-    /*max-height: none;*/
-    max-width: 106%;
+    max-height: none;
+    max-width: 100vw;
   }
 
-  #cast article .img-container {
-    background-size: 100%;
+  #cast article.active .img-container {
+    background-size: cover;
+  }
+
+  #cast article.active.carl .img-container {
+    background-image: url("../img/cast-desktop/carl@2x.jpg");
+  }
+
+  #cast article.active.whip .img-container {
+    background-image: url("../img/cast-desktop/whip@2x.jpg");
+  }
+
+  #cast article.active.cane .img-container {
+    background-image: url("../img/cast-desktop/cane@2x.jpg");
+  }
+
+  #cast article.active.panto .img-container {
+    background-image: url("../img/cast-desktop/panto@2x.jpg");
+  }
+
+  #cast article.active.allyson .img-container {
+    background-image: url("../img/cast-desktop/allyson@2x.jpg");
+  }
+
+  #cast article.active.boots .img-container {
+    background-image: url("../img/cast-desktop/boots@2x.jpg");
   }
 }
