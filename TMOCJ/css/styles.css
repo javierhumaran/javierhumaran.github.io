@@ -125,6 +125,21 @@ h4, h5, p {
   background-color: transparent !important;
 }
 
+#navbar.transparent .icon-menu {
+  opacity: 0;
+  ransition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out;
+}
+
+#navbar.transparent .icon-close {
+  opacity: 1;
+  ransition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out;
+  z-index: 9;
+}
+
 #navbar.black {
   background-color: black;
   transition: background-color 300ms ease-out;
@@ -133,11 +148,30 @@ h4, h5, p {
 }
 
 #navbar .icon-menu {
-  background-image: url("../img/icon-menu.png");
+  background-image: url("../img/icon-menu.svg");
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+  opacity: 1;
+  ransition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out;
   width: 48px;
+}
+
+#navbar .icon-close {
+  background-image: url("../img/icon-close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 20px;
+  position: absolute;
+  opacity: 0;
+  ransition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out;
+  width: 48px;
+  z-index: -1;
 }
 
 #navbar p {
@@ -353,12 +387,12 @@ section h2 {
 }
 
 #cast article.carl .img-container {
-  background-color: #7d6a60;
+  background-color: #000;
   background-image: url("../img/cast-mobile/carl.jpg");
 }
 
 #cast article.whip .img-container {
-  background-color: #030503;
+  background-color: #000;
   background-image: url("../img/cast-mobile/whip.jpg");
 }
 
@@ -437,11 +471,11 @@ section h2 {
 }
 
 #cast article.active.carl {
-  background-color: #7d6a60;
+  background-color: #000;
 }
 
 #cast article.active.whip {
-  background-color: #030503;
+  background-color: #000;
 }
 
 #cast article.active.cane {

@@ -3,6 +3,7 @@ $(document).ready(function(){
   var body            = $("body");
   var navbar          = $("#navbar");
   var menuButton      = $(".icon-menu");
+  var closeButton     = $(".icon-close");
   var menuOverlay     = $(".menu-items");
   var menuOptions     = $(".menu-items li");
 
@@ -85,6 +86,30 @@ $(document).ready(function(){
   });
 
   menuOverlay.click(function() {
+    if (menuOverlay.hasClass("active")) {
+      // Fade out the menu overlay and set back to normal the other elements
+      body.removeClass("no-scroll");
+      navbar.removeClass("transparent");
+      menuOverlay.removeClass("opacity");
+      heroSection.removeClass("blurred");
+
+      // Set scroll position back to original before opening the menu
+      window.scrollTo(0, currentScroll);
+
+      setTimeout(function() {
+        // Enables scrollable function
+        console.log("Scrollale true from overlay")
+        scrollable = true;
+      }, 50);
+
+      setTimeout(function() {
+        // Removes all the attributes left to the menu overlay
+        menuOverlay.removeClass("active");
+      }, 350);
+    }
+  });
+
+  closeButton.click(function() {
     if (menuOverlay.hasClass("active")) {
       // Fade out the menu overlay and set back to normal the other elements
       body.removeClass("no-scroll");
