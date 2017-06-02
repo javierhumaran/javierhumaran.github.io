@@ -631,6 +631,7 @@ section h2 {
   font-style: italic;
   font-weight: bold;
   letter-spacing: 0.4px;
+  margin: 0;
   outline: none;
   padding: 0 16px;
 }
@@ -643,8 +644,10 @@ section h2 {
   font-family: 'Lora', serif;
   font-weight: bold;
   font-size: 10px;
+  height: 32px;
   padding: 0;
   width: 72px;
+  -webkit-appearance: none;
 }
 
 #support .social-media {
