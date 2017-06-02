@@ -354,7 +354,7 @@ section h2 {
 }
 
 #cast article .btn-close {
-  background-image: url("../img/icon-close.png");
+  background-image: url("../img/icon-close.svg");
   background-position: center;
   display: none;
   height: 24px;
@@ -541,9 +541,9 @@ section h2 {
 }
 
 #gallery article.image {
-  background-image: url("../img/gallery.png");
+  background-image: url("../img/gallery/gallery-1.jpg");
+  background-position: center 0;
   background-size: cover;
-  background-position: -80px 0;
   height: 100%;
   min-height: 283px;
 }
@@ -747,12 +747,8 @@ section h2 {
     background-image: url("../img/cast-mobile/boots@2x.jpg");
   }
 
-  #gallery {
-    height: calc(100vh - 56px);
-  }
-
   #gallery article.image {
-    background-position: 0;
+    min-height: 400px;
   }
 
   #support {
