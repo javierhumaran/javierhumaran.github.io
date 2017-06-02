@@ -20,10 +20,17 @@ $(document).ready(function(){
   var castDetail      = $("#cast-detail");
   var btnClose        = $(".btn-close");
 
+  var galleryTop    = $("#gallery .image .top");
+  var galleryBottom = $("#gallery .image .bottom");
+  var galleryNext  = $("#gallery .control.next");
+  var galleryPrevious  = $("#gallery .control.previous");
+
   var scrollable = true;
   var castOpen   = false;
-  var currentSection   = heroSection;
+  var currentSection  = heroSection;
   var currentScroll;
+  var currentTop = 1;
+  var currentBottom = 2;
 
   $(window).scroll(function() {
     // Only applies when mobile overlay menu is closed.
@@ -67,6 +74,91 @@ $(document).ready(function(){
       } else {
         navbar.removeClass("black");
       }
+    }
+  });
+
+  galleryPrevious.click(function() {
+    if (galleryTop.hasClass("active")) {
+
+      if (currentTop == 1 && currentBottom == 2) {
+        currentBottom = 6;
+
+        var botomSrc = "./img/gallery/gallery-" + currentBottom + ".jpg";
+        galleryBottom.attr("src", botomSrc);
+      }
+
+      galleryTop.removeClass("active");
+      galleryBottom.addClass("active");
+
+      if (currentTop > 1) {
+        currentTop = currentTop - 2;
+      }
+      else {
+        currentTop = 5;
+      }
+
+      var topSrc = "./img/gallery/gallery-" + currentTop + ".jpg";
+
+      setTimeout(function() {
+        galleryTop.attr("src", topSrc);
+      }, 400);
+
+    }
+    else {
+      galleryBottom.removeClass("active");
+      galleryTop.addClass("active");
+
+      if (currentBottom > 2) {
+        currentBottom = currentBottom - 2;
+      }
+      else {
+        currentBottom = 6;
+      }
+
+      var bottomSrc = "./img/gallery/gallery-" + currentBottom + ".jpg";
+
+      setTimeout(function() {
+        galleryBottom.attr("src", bottomSrc);
+      }, 400);
+    }
+  });
+
+  galleryNext.click(function() {
+    if (galleryTop.hasClass("active")) {
+
+      galleryTop.removeClass("active");
+      galleryBottom.addClass("active");
+
+      if (currentTop < 5) {
+        currentTop = currentTop + 2;
+      }
+      else {
+        currentTop = 1;
+      }
+
+      var imgSrc = "./img/gallery/gallery-" + currentTop + ".jpg";
+
+      setTimeout(function() {
+        galleryTop.attr("src", imgSrc);
+      }, 400);
+
+    }
+    else {
+      galleryBottom.removeClass("active");
+      galleryTop.addClass("active");
+
+      if (currentBottom < 6) {
+        currentBottom = currentBottom + 2;
+      }
+      else {
+        currentBottom = 2;
+      }
+
+      var imgSrc = "./img/gallery/gallery-" + currentBottom + ".jpg";
+
+      setTimeout(function() {
+        galleryBottom.attr("src", imgSrc);
+      }, 400);
     }
   });
 
