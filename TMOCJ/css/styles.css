@@ -791,6 +791,11 @@ section h2 {
 
 /** TABLETS **/
 @media (min-width: 768px) {
+  #video-box div iframe {
+    height: 360px;
+    width: 640px;
+  }
+
   #hero {
     background-position: center;
     position: relative;
