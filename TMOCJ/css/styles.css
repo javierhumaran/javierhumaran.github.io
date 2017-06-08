@@ -753,6 +753,7 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
+    padding-bottom: 56px;
   }
 
   #cast article {
@@ -857,6 +858,10 @@ section h2 {
     max-width: 360px;
   }
 
+  #cast {
+    padding-top: 84px !important;
+  }
+
   #cast article {
     flex-basis: calc(100%/3);
   }
@@ -921,7 +926,8 @@ section h2 {
   }
 
   #gallery {
-    height: 640px;
+    height: calc(100vh - 56px);
+    padding-top: 84px !important;
   }
 }
 
@@ -930,6 +936,10 @@ section h2 {
   #home-video {
     max-height: none;
     max-width: 100vw;
+  }
+
+  #cast {
+    padding-top: 140px !important;
   }
 
   #cast article.active .img-container {
@@ -959,4 +969,8 @@ section h2 {
   #cast article.active.boots .img-container {
     background-image: url("../img/cast-desktop/boots@2x.jpg");
   }
+
+  /*#gallery {
+    padding-top: 140px !important;
+  }*/
 }
