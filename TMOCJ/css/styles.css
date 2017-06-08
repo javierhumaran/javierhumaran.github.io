@@ -948,8 +948,8 @@ section h2 {
 /** DESKTOP HD **/
 @media (min-width: 1332px) {
   #home-video {
+    height: 100vh !important;
     max-height: none;
-    max-width: 100vw;
   }
 
   #cast {
