@@ -6,7 +6,10 @@ $(document).ready(function(){
   var closeButton     = $(".icon-close");
   var menuOverlay     = $(".menu-items");
   var menuOptions     = $(".menu-items li");
+  var trailerButton   = $(".btn-trailer");
+  var closeTrailerButton = $("#video-box .btn-close");
 
+  var videoBox        = $("#video-box");
   var heroSection     = $("#hero");
   var synopsisSection = $("#synopsis");
   var castSection     = $("#cast");
@@ -75,6 +78,28 @@ $(document).ready(function(){
         navbar.removeClass("black");
       }
     }
+  });
+
+  trailerButton.click(function() {
+    body.addClass("no-scroll");
+    videoBox.addClass("active");
+
+    setTimeout(function() {
+      videoBox.addClass("opacity");
+    }, 50);
+  });
+
+  closeTrailerButton.click(function() {
+    videoBox.removeClass("opacity");
+    body.removeClass("no-scroll");
+
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+    }, 10);
+
+    setTimeout(function() {
+      videoBox.removeClass("active");
+    }, 400);
   });
 
   galleryPrevious.click(function() {

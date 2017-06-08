@@ -252,6 +252,77 @@ h4, h5, p {
   text-decoration: none;
 }
 
+#video-box {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 9;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 400ms ease-out;
+  -webkit-transition: opacity 400ms ease-out;
+  -ms-transition: opacity 400ms ease-out;
+}
+
+#video-box.active {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#video-box.opacity {
+  opacity: 1;
+  transition: opacity 400ms ease-out;
+  -webkit-transition: opacity 400ms ease-out;
+  -ms-transition: opacity 400ms ease-out;
+}
+
+#video-box:before,
+#video-box::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#video-box:before {
+  background-color: black;
+  opacity: 0.6;
+  z-index: 9;
+}
+
+#video-box:after {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  background-image: url(../img/image-background.png);
+  background-size: cover;
+}
+
+#video-box div {
+  position: relative;
+  z-index: 9;
+}
+
+#video-box div .btn-close {
+  height: 24px;
+  width: 24px;
+  background-image: url("../img/icon-close.svg");
+  position: absolute;
+  top: -32px;
+  right: 0;
+}
+
 #home-video {
   display: none;
   left: 0;
