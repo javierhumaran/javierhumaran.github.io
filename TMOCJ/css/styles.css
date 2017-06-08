@@ -15,8 +15,10 @@ h1, h2, h3, h4, h5, p {
 }
 
 h1 {
+  font-family: "Cormorant SC", serif;
   font-size: 32px;
-  letter-spacing: 1.6px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
 
 h2 {
@@ -28,7 +30,7 @@ h3 {
   font-size: 20px;
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-family: 'Lora', serif;
   font-weight: bold;
 }
@@ -299,6 +301,10 @@ h4, h5, p {
   text-shadow: 0 0 22px rgba(0, 0, 0, 0.5);
 }
 
+#hero .container h3 {
+  font-weight: normal;
+}
+
 #hero .btn-donate {
   display: none;
   z-index: 1;
@@ -336,8 +342,6 @@ section h2 {
 }
 
 #synopsis .container p {
-  font-size: 20px;
-  line-height: 28px;
   margin-top: 32px;
   padding: 0 32px;
 }
@@ -438,6 +442,7 @@ section h2 {
 }
 
 #cast article .content h3 {
+  letter-spacing: .9px;
   margin-bottom: 4px;
   z-index: 1;
 }
@@ -853,8 +858,8 @@ section h2 {
   }
 
   #synopsis .container p {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 28px;
     margin: auto 0 auto auto;
     max-width: 560px;
     padding-right: 32px;
