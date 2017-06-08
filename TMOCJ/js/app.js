@@ -92,6 +92,7 @@ $(document).ready(function(){
   closeTrailerButton.click(function() {
     videoBox.removeClass("opacity");
     body.removeClass("no-scroll");
+    $("#video-frame")[0].src = $("#video-frame")[0].src;
 
     setTimeout(function() {
       window.scrollTo(0, 0);
