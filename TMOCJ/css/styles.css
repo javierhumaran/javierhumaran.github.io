@@ -941,6 +941,7 @@ section h2 {
 
   #synopsis .container {
     flex-direction: row-reverse;
+    padding: 48px 0 48px 48px;
   }
 
   #synopsis .container p {
@@ -952,7 +953,7 @@ section h2 {
   }
 
   #synopsis .container img {
-    max-width: 360px;
+    max-width: 50%;
   }
 
   #cast {
