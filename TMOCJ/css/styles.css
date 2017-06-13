@@ -754,8 +754,8 @@ section h2 {
   background-image: url("../img/icon-twitter.png");
 }
 
-#support .social-media .icon-vimeo {
-  background-image: url("../img/icon-vimeo.png");
+#support .social-media .icon-imdb {
+  background-image: url("../img/icon-imdb.png");
 }
 
 #support .social-media .icon-instagram {
@@ -828,8 +828,6 @@ section h2 {
   }
 
   #synopsis .container p {
-    font-size: 26px;
-    line-height: 32px;
     margin: 32px 0 0 0;
   }
 
@@ -945,8 +943,6 @@ section h2 {
   }
 
   #synopsis .container p {
-    font-size: 24px;
-    line-height: 28px;
     margin: auto 0 auto auto;
     max-width: 560px;
     padding-right: 32px;
