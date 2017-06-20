@@ -110,6 +110,10 @@ h4, h5, p {
   width: 192px;
 }
 
+.btn-donate:hover {
+  background-image: url("../img/donate-hover.png");
+}
+
 #navbar {
   background-color: rgba(0, 0, 0, 0.28);
   display: flex;
