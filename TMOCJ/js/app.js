@@ -162,10 +162,10 @@ $(document).ready(function(){
         currentTop = 1;
       }
 
-      var imgSrc = "./img/gallery/gallery-" + currentTop + ".jpg";
+      var imgSrc = 'url(./img/gallery/gallery-' + currentTop + '@2x.jpg)';
 
       setTimeout(function() {
-        galleryTop.attr("src", imgSrc);
+        galleryTop.css("background-image", imgSrc);
       }, 400);
 
     }
@@ -180,10 +180,10 @@ $(document).ready(function(){
         currentBottom = 2;
       }
 
-      var imgSrc = "./img/gallery/gallery-" + currentBottom + ".jpg";
+      var imgSrc = 'url(./img/gallery/gallery-' + currentBottom + '@2x.jpg)';
 
       setTimeout(function() {
-        galleryBottom.attr("src", imgSrc);
+        galleryBottom.css("background-image", imgSrc);
       }, 400);
     }
   });
