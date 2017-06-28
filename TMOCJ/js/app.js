@@ -297,7 +297,7 @@ $(document).ready(function(){
     $(content).css("transition", "");
     body.removeClass("no-scroll");
 
-    var positionToGo = $(actorSelected)[0].offsetTop - 56;
+    var positionToGo = $(castSection)[0].offsetTop;
     window.scrollTo(0, positionToGo);
 
     setTimeout(function() {
