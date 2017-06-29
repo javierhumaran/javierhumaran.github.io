@@ -109,8 +109,17 @@ $(document).ready(function(){
       if (currentTop == 1 && currentBottom == 2) {
         currentBottom = 6;
 
-        var botomSrc = "./img/gallery/gallery-" + currentBottom + ".jpg";
-        galleryBottom.attr("src", botomSrc);
+        var imgSrc = 'url(./img/gallery/gallery-' + currentBottom + '@2x.jpg)';
+        galleryBottom.css("background-image", imgSrc);
+      }
+      if (currentBottom > currentTop) {
+
+        if (currentTop != 1) {
+          currentBottom = currentBottom - 2;
+        }
+
+        var imgSrc = 'url(./img/gallery/gallery-' + currentBottom + '@2x.jpg)';
+        galleryBottom.css("background-image", imgSrc);
       }
 
       galleryTop.removeClass("active");
@@ -123,14 +132,32 @@ $(document).ready(function(){
         currentTop = 5;
       }
 
-      var topSrc = "./img/gallery/gallery-" + currentTop + ".jpg";
+      var imgSrc = 'url(./img/gallery/gallery-' + currentTop + '@2x.jpg';
 
       setTimeout(function() {
-        galleryTop.attr("src", topSrc);
+        galleryTop.css("background-image", imgSrc);
       }, 400);
 
     }
     else {
+      if (currentBottom < currentTop) {
+        if (currentTop == 3) {
+          currentTop = 1;
+        }
+        else {
+          currentTop = currentTop - 2;
+        }
+
+        var imgSrc = 'url(./img/gallery/gallery-' + currentTop + '@2x.jpg)';
+        galleryTop.css("background-image", imgSrc);
+      }
+      else {
+        currentTop = currentBottom - 1;
+
+        var imgSrc = 'url(./img/gallery/gallery-' + currentTop + '@2x.jpg)';
+        galleryTop.css("background-image", imgSrc);
+      }
+
       galleryBottom.removeClass("active");
       galleryTop.addClass("active");
 
@@ -141,16 +168,29 @@ $(document).ready(function(){
         currentBottom = 6;
       }
 
-      var bottomSrc = "./img/gallery/gallery-" + currentBottom + ".jpg";
+      var imgSrc = 'url(./img/gallery/gallery-' + currentBottom + '@2x.jpg';
 
       setTimeout(function() {
-        galleryBottom.attr("src", bottomSrc);
+        galleryBottom.css("background-image", imgSrc);
       }, 400);
     }
   });
 
   galleryNext.click(function() {
     if (galleryTop.hasClass("active")) {
+
+      if (currentBottom < currentTop) {
+        currentBottom = currentBottom + 2;
+
+        var imgSrc = 'url(./img/gallery/gallery-' + currentBottom + '@2x.jpg)';
+        galleryBottom.css("background-image", imgSrc);
+      }
+      else if (currentBottom == 6 && currentTop == 1) {
+        currentBottom = 2;
+
+        var imgSrc = 'url(./img/gallery/gallery-' + currentBottom + '@2x.jpg)';
+        galleryBottom.css("background-image", imgSrc);
+      }
 
       galleryTop.removeClass("active");
       galleryBottom.addClass("active");
@@ -170,6 +210,23 @@ $(document).ready(function(){
 
     }
     else {
+      if (currentTop < currentBottom) {
+        if (currentTop == 1 && currentBottom != 6) {
+          currentTop = currentTop + 2;
+        }
+        else if (currentTop != 1) {
+          if (currentTop == 5) {
+            currentTop = 1;
+          }
+          else {
+            currentTop = currentTop + 2;
+          }
+        }
+
+        var imgSrc = 'url(./img/gallery/gallery-' + currentTop + '@2x.jpg)';
+        galleryTop.css("background-image", imgSrc);
+      }
+
       galleryBottom.removeClass("active");
       galleryTop.addClass("active");
 
