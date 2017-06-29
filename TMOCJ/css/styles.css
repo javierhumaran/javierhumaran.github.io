@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, p {
 h1 {
   font-family: "Cormorant SC", serif;
   font-size: 32px;
-  font-weight: bold;
   letter-spacing: 1.5px;
 }
 
@@ -989,6 +988,7 @@ section h2 {
   }
 
   #cast {
+    align-content: center;
     padding-top: 84px !important;
   }
 
