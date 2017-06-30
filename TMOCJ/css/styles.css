@@ -341,7 +341,8 @@ h4, h5, p {
 
 #hero {
   background-image: url("../img/image-background.png");
-  background-position: -544px 0;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
