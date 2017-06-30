@@ -710,6 +710,7 @@ section h2 {
   align-items: center;
   display: flex;
   flex-flow: column;
+  justify-content: center;
   padding-bottom: 80px;
 }
 
