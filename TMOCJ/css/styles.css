@@ -329,10 +329,14 @@ h4, h5, p {
 
 #home-video {
   display: none;
-  left: 0;
-  max-height: 100%;
+  height: auto;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
 }
 
 #hero {
@@ -1082,11 +1086,6 @@ section h2 {
 
 /** DESKTOP HD **/
 @media (min-width: 1332px) {
-  #home-video {
-    height: 100vh !important;
-    max-height: none;
-  }
-
   #hero .container .info {
     max-width: none;
   }
