@@ -636,7 +636,7 @@ section h2 {
 
 #gallery article.image {
   height: 100%;
-  min-height: 240px;
+  min-height: 400px;
   overflow: hidden;
   position: relative;
 }
@@ -777,7 +777,7 @@ section h2 {
 
 #support .social-media {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 88px;
   width: 100%;
 }
@@ -786,6 +786,7 @@ section h2 {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 40px;
+  margin: 0 8px;
   width: 40px;
 }
 
@@ -920,7 +921,7 @@ section h2 {
   }
 
   #gallery article.image {
-    min-height: 432px;
+    min-height: 560px;
   }
 
   #support {
