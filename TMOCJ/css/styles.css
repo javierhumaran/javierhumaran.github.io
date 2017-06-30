@@ -416,6 +416,10 @@ section h2 {
   max-width: 360px;
 }
 
+#synopsis .container h3 {
+  display: none;
+}
+
 #synopsis .container p {
   margin-top: 32px;
   padding: 0 32px;
@@ -974,6 +978,13 @@ section h2 {
   #synopsis .container {
     flex-direction: row-reverse;
     padding: 48px 0 48px 48px;
+  }
+
+  #synopsis .container h3 {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 32px;
+    padding: 0 32px;
   }
 
   #synopsis .container p {
